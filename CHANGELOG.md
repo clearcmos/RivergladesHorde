@@ -8,6 +8,7 @@
 - The guide's RXP group is now "CMOS Riverglades Horde (Experimental)"; select it again in RXP's guide picker after updating.
 - Loads only on WoW Forever (`AllowLoadGameType: camelot`).
 - Sleebo's Gaseous Gold and Rock 'em and Sock 'em moved to chapter 1: the gas vents are at the same ponds as the Glade Vipers, so they are looted during the viper hunt.
+- WANTED: Ghostmaw is tracked along the whole river and Sunnyglade route instead of one spot; WANTED: Scoutmaster Vargas is offered in chapter 2 beside the Twilight camp, with chapter 3 as a fallback; Sand Crawler Meat counts from the first dock step.
 
 ## v0.2.1
 

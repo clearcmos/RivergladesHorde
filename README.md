@@ -38,7 +38,7 @@ Data sources and the decisions behind the quest order are in [SOURCES.md](SOURCE
 
 ## Development
 
-- `bash tools/check.sh`: Lua 5.1 syntax, the guide test against an installed RXPGuides (set `RXP_GUIDES_DIR` to its folder), and the tool tests. Needs LuaJIT, the Lua 5.1 compiler and Python 3. The guide test loads RXP's own parser and directive functions with WoW API stand-ins; it checks chapter links, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, progress counters and the arrival order, not in-game behavior.
+- `bash tools/check.sh`: Lua 5.1 syntax, the guide test against an installed RXPGuides (set `RXP_GUIDES_DIR` to its folder), and the tool tests. Needs LuaJIT, the Lua 5.1 compiler and Python 3. The guide test loads RXP's own parser and directive functions with WoW API stand-ins; it checks chapter links, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, progress counters and the arrival order, not in-game behavior. `tests/test_route.py` also audits the route for objectives left for a later visit to an area you have already worked.
 - `luacheck CMOS-Riverglades.lua tests --config .luacheckrc` (lint) and `stylua --check --config-path stylua.toml CMOS-Riverglades.lua tests` (format).
 - `python3 tools/install.py <path to Interface/AddOns>`: replaces the local `CMOS_Riverglades` folder with the files the packager ships.
 - Releases: see [CI.md](CI.md).

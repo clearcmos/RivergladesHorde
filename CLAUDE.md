@@ -12,6 +12,7 @@ The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Rivergl
 - `tools/install.py`: replaces `AddOns/CMOS_Riverglades` locally with the files the packager ships; refuses an AddOns folder without RXPGuides.
 - `tests/rxp_harness.lua`: loads the installed RXP `functions.lua`, `GuideLoader.lua` and flight database with WoW API stand-ins (`RXP_GUIDES_DIR` overrides the default path).
 - `tests/riverglades.lua`: chapter links and group, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, bare `.complete` lines, arrival order, and no CMOS Dungeon Guides directives.
+- `tests/test_route.py`: route audit. Fails when a quest already in the log, or free to take from a giver the route has already passed, has its objective area worked on an earlier, separate visit (the Gaseous Gold vents regression). Reviewed exceptions go in `REVIEWED` with the reason.
 - `tests/test_tools.py`: TOC fields, the `.pkgmeta` ignore list against the shipped files, and the local installer.
 - `SOURCES.md`: data sources, prerequisite decisions and known gaps.
 

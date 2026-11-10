@@ -67,6 +67,13 @@ step
     .accept 95992 >>Optional elite: take WANTED: Ghostmaw from the board by Neza. Ghostmaw, a level 42 crocolisk, patrols the river between Rog'mar and Sunnyglade.
 step
     #optional
+    #completewith SunnygladeDone
+    .isOnQuest 95992
+    >>Optional elite: Ghostmaw patrols the river from Rog'mar down past Sunnyglade. Kill it for Ghostmaw's Fang whenever you meet it.
+    .complete 95992,1
+    .unitscan Ghostmaw
+step
+    #optional
     .xp <38,1
     .goto 2548,59.6,46.9
     .accept 95882 >>Optional elite: take WANTED: Scoutmaster Vargas from the poster. Vargas is on the north-east coast and is routed in chapter 3.
@@ -335,17 +342,6 @@ step
     .accept 95955 >>Accept Stick 'Em.
 step
     #loop
-    #optional
-    .isOnQuest 95992
-    .goto 2548,56.6,44.4,0
-    .goto 2548,52.6,40.7,40,0
-    .goto 2548,61.2,47.3,40,0
-    .goto 2548,55.4,46.2,40,0
-    >>Optional elite: Ghostmaw patrols the river from Rog'mar down past Sunnyglade. Kill it for Ghostmaw's Fang when you meet it.
-    .complete 95992,1
-    .unitscan Ghostmaw
-step
-    #loop
     .isOnQuest 95955
     .goto 2548,48.8,53.8,0
     .goto 2548,41.8,54.8,40,0
@@ -587,6 +583,11 @@ step
     .goto 2548,59.4,44.0
     .target Tran'gul
     .accept 94727 >>Accept Digging for Answers. It starts the next chapter.
+step
+    .isQuestComplete 95992
+    .goto 2548,58.2,45.2
+    .target Tan'jani
+    .turnin 95992 >>Turn in WANTED: Ghostmaw to Tan'jani.
 step
     .xp <36,1
     .goto 2548,30.2,69.0
@@ -917,6 +918,17 @@ step
     .complete 95425,1
     .mob Klunk
 step
+    #loop
+    #optional
+    .isOnQuest 95882
+    .goto 2548,75.1,34.0,0
+    .goto 2548,75.0,30.1,40,0
+    .goto 2548,75.6,35.5,40,0
+    .goto 2548,75.1,37.8,40,0
+    >>Optional elite: Scoutmaster Vargas stands just south of here, west of Windstead. Kill him and take the Scoutmaster's Eye.
+    .complete 95882,1
+    .mob Scoutmaster Vargas
+step
     #optional
     .xp <36,1
     .isQuestAvailable 94556
@@ -1177,6 +1189,13 @@ step
     .goto 2548,78.5,53.9
     .accept 95120 >>Optional elite: take WANTED: Old Rot-Chum from the board.
 step
+    #completewith PortSouthDone
+    .isOnQuest 95121
+    >>Kill Sand Crawlers and Shore Crawlers for 6 Sand Crawler Meat.
+    .complete 95121,2
+    .mob Sand Crawler
+    .mob Shore Crawler
+step
     #loop
     .isOnQuest 95254
     .goto 2548,80.0,53.5,0
@@ -1194,13 +1213,6 @@ step
     .goto 2548,79.0,54.2
     .target Fimbo Greasemitz
     .turnin 95254 >>Turn in WANTED: Trapclaw to Fimbo.
-step
-    #completewith PortSouthDone
-    .isOnQuest 95121
-    >>Kill Sand Crawlers and Shore Crawlers for 6 Sand Crawler Meat.
-    .complete 95121,2
-    .mob Sand Crawler
-    .mob Shore Crawler
 step
     .xp <38,1
     .goto 2548,72.3,61.8
