@@ -13,6 +13,8 @@ The repository needs two Actions secrets:
 
 `.pkgmeta` packages the repository as the `CMOS_Riverglades` folder and ignores everything that is not the addon: docs, tests, tools and config. The zip holds `CMOS_Riverglades.toc`, `CMOS-Riverglades.lua` and `LICENSE.md`. `CHANGELOG.md` becomes the release notes but is not in the zip.
 
+`required-dependencies` lists RestedXP Guide (`restedxp-guide`, CurseForge project 486246), so each upload declares it and the CurseForge app installs it alongside.
+
 The packager reads `## Interface: 16001` from the TOC and uploads the file for WoW Forever (game version 1.60.1).
 
 ## Release steps

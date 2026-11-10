@@ -7,7 +7,7 @@ A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46,
 ## Requirements
 
 - WoW Forever.
-- **RestedXP Guides (RXPGuides)** installed and enabled. This addon only adds a guide to it and does nothing on its own.
+- **[RestedXP Guide](https://www.curseforge.com/wow/addons/restedxp-guide)** (RXPGuides) installed and enabled. This addon only adds a guide to it and does nothing on its own. The CurseForge app installs it as a required dependency.
 - A Horde character.
 
 ## Install

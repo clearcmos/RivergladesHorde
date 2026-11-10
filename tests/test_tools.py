@@ -26,7 +26,8 @@ class TocTests(unittest.TestCase):
     def test_pkgmeta_ships_only_addon_files(self):
         pkgmeta = (ROOT / ".pkgmeta").read_text()
         self.assertIn("package-as: CMOS_Riverglades\n", pkgmeta)
-        ignored = set(re.findall(r"^  - (\S+)$", pkgmeta, re.M))
+        self.assertIn("required-dependencies:\n  - restedxp-guide\n", pkgmeta)
+        ignored = set(re.findall(r"^  - (\S+)$", pkgmeta.split("ignore:", 1)[1], re.M))
         shipped = {path.name for path in ROOT.iterdir() if path.name not in ignored and path.name not in {".git", ".release"}}
         self.assertEqual(shipped, set(installer.addon_files()))
 

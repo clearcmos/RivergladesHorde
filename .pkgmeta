@@ -1,5 +1,8 @@
 package-as: CMOS_Riverglades
 
+required-dependencies:
+  - restedxp-guide
+
 manual-changelog:
   filename: CHANGELOG.md
   markup-type: markdown
