@@ -22,7 +22,8 @@ In RXP's guide picker, select **CMOS Riverglades Horde (Experimental)**, then **
 1. **Rog'mar and the River (36-41)**: arrival from the Badlands, the Rog'mar quest givers, Sleebo's gas vents, Turner's Logging Camp, Meadowsbrook, Sunnyglade, Gelinda Coppergleam's dragon caves and the Bristle Hills.
 2. **Sunnyglade and Bolder'ok (40-45)**: the caves under Sunnyglade with Clubtoe, Na'zok's farm, Clugfist, and the Bloodmaster's Ring.
 3. **Powderfuse Port and the Coast (40-45)**: Friz's smuggling chain, Wharfmaster Whizzbuzz's pirate quests, the murlocs and the sea monster.
-4. **Twilight's Shroud (42-46)**: Da'grosh, Crag'rog, Executioner Morg and Overlord Kilgar.
+4. **Twilight's Shroud (42-46)**: Da'grosh, Crag'rog, Executioner Morg and Overlord Kilgar; picks up the Krol'dok Stronghold quests and On the Other Side (Feralas).
+5. **Krol'dok Stronghold (dungeon, 40-45)**: optional group run for Eye of Mugg, Tome of Twilight, A Token of Vengeance and the Krol'dok Moulding found inside, with the turn-ins afterwards.
 
 ## What the guide does and does not do
 
@@ -31,7 +32,7 @@ In RXP's guide picker, select **CMOS Riverglades Horde (Experimental)**, then **
 - Elite kills (Snargl, Ghostmaw, Ombassa, Scaldaron, Old Rot-Chum, Scoutmaster Vargas), Step Two: More Rock (Heavy Weightstones) and Not My Circus (Cooking 200) are optional steps.
 - Show Them How It's Done and Bristle Hills Bandits are offered at the earliest likely point with a skip note and again later, because their unlock order is not documented.
 - Arrival is a zone step with written directions (the road south from the Badlands, or the Kargath flight once Rog'mar is known), then an arrow to Rog'mar. The Rog'mar flight path step finishes when you reach the flight master, because RXP cannot yet detect that flight path.
-- Not included: Krol'dok Stronghold's dungeon quests, Friz's chains that continue to Booty Bay and Tanaris, On the Other Side (Feralas), and Armory of Sunnyglade (starts in Undercity).
+- Not included: Friz's chains that continue to Booty Bay and Tanaris, and Armory of Sunnyglade (starts in Undercity).
 - The Jom-jom pickup, the Sweetberry and Riverweed spots and the Twilight Ritual Circles have no recorded coordinates; those steps describe the area.
 
 Data sources and the decisions behind the quest order are in [SOURCES.md](SOURCES.md). Report problems on the project's CurseForge page or GitHub issues.

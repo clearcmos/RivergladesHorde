@@ -7,7 +7,7 @@ Companion addon for RXPGuides on WoW Forever: a Horde questing route through the
 The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Riverglades` and ignores everything else.
 
 - `CMOS_Riverglades.toc`: Interface 16001, `AllowLoadGameType: camelot`, `Dependencies: RXPGuides`, Version. The title says Horde and Experimental.
-- `CMOS-Riverglades.lua`: four `RXPGuides.RegisterGuide` chapters, group `CMOS Riverglades Horde (Experimental)`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 04`.
+- `CMOS-Riverglades.lua`: five `RXPGuides.RegisterGuide` chapters, group `CMOS Riverglades Horde (Experimental)`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 05` (chapter 5 is the optional Krol'dok Stronghold dungeon run).
 - `.github/workflows/release.yml`, `.pkgmeta`, `CI.md`: tag-driven packaging and CurseForge upload.
 - `tools/install.py`: replaces `AddOns/CMOS_Riverglades` locally with the files the packager ships; refuses an AddOns folder without RXPGuides.
 - `tests/rxp_harness.lua`: loads the installed RXP `functions.lua`, `GuideLoader.lua` and flight database with WoW API stand-ins (`RXP_GUIDES_DIR` overrides the default path).

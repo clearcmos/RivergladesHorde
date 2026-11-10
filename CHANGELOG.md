@@ -7,6 +7,7 @@
 - 41 kill and collect steps send the arrow around a loop: 32 outline where their mobs or objects were seen, and 9 with only one or two known spots circle them so you scout the area. Named bosses, ring fights, caves and one-spot objectives keep a single marker.
 - The guide's RXP group is now "CMOS Riverglades Horde (Experimental)"; select it again in RXP's guide picker after updating.
 - Loads only on WoW Forever (`AllowLoadGameType: camelot`).
+- Chapter 5, Krol'dok Stronghold: the zone's dungeon quests are picked up at the end of chapter 4 and run as an optional group chapter, with the turn-ins afterwards. Chapter 4 also picks up On the Other Side for Feralas.
 - Sleebo's Gaseous Gold and Rock 'em and Sock 'em moved to chapter 1: the gas vents are at the same ponds as the Glade Vipers, so they are looted during the viper hunt.
 - WANTED: Ghostmaw is tracked along the whole river and Sunnyglade route instead of one spot; WANTED: Scoutmaster Vargas is offered in chapter 2 beside the Twilight camp, with chapter 3 as a fallback; Sand Crawler Meat counts from the first dock step.
 

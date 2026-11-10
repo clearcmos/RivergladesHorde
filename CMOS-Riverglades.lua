@@ -1543,7 +1543,8 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 04 Twilight's Shroud
 #displayname 4. Twilight's Shroud (42-46)
-#version 2
+#version 3
+#next RG - 05 Krol'dok Stronghold
 
 step
     +Take the war to the Twilight's Hammer fortress in the west with Da'grosh, free the ogre miners, and bring the news back to Rog'mar.
@@ -1708,6 +1709,12 @@ step
     .target Da'grosh
     .accept 95278 >>Accept It Is Time, Brother...
 step
+    .xp <38,1
+    .isQuestTurnedIn 94768
+    .goto 2548,33.4,38.0
+    .target Da'grosh
+    .accept 94975 >>Accept A Token of Vengeance, a quest for the Krol'dok Stronghold dungeon in chapter 5. Skip this step if Da'grosh does not offer it or you will not run the dungeon.
+step
     .isOnQuest 95278
     .goto 2548,59.4,45.6
     .target Krom'rosh
@@ -1723,5 +1730,124 @@ step
     .target Clugfist
     .turnin 95433 >>Ride north to Bolder'ok and give the Executioner's Mace to Clugfist.
 step
-    +Riverglades is finished. Krol'dok Stronghold's dungeon quests and the quests that continue to Booty Bay, Tanaris or Feralas are not part of this guide.
+    .xp <40,1
+    .isQuestTurnedIn 95278
+    .goto 2548,59.4,45.6
+    .target Krom'rosh
+    .accept 94968 >>Accept Eye of Mugg from Krom'rosh, a Krol'dok Stronghold dungeon quest. Skip this step if he does not offer it or you will not run the dungeon.
+step
+    .xp <39,1
+    .goto 2548,59.4,44.0
+    .target Tran'gul
+    .accept 94972 >>Accept Tome of Twilight from Tran'gul, a Krol'dok Stronghold dungeon quest. Skip this step if he does not offer it or you will not run the dungeon.
+step
+    .xp <40,1
+    .goto 2548,58.2,45.2
+    .target Tan'jani
+    .accept 95033 >>Accept On the Other Side from Tan'jani. It sends you to Witch Doctor Uzer'i at Camp Mojache in Feralas when you leave Riverglades.
+step
+    +The Riverglades zone story is finished. Chapter 5 is the Krol'dok Stronghold dungeon (group, 40-45); skip it if you are not running the dungeon.
+    >>The quests that continue to Booty Bay and Tanaris are not part of this guide.
+]=])
+
+RXPGuides.RegisterGuide([=[
+#forever
+<< Horde
+#group CMOS Riverglades Horde (Experimental)
+#subgroup Riverglades 36-46
+#name RG - 05 Krol'dok Stronghold
+#displayname 5. Krol'dok Stronghold (dungeon, 40-45)
+#version 1
+
+step
+    +Krol'dok Stronghold is a five-player dungeon (levels 40-45) in the north of Riverglades, held by the Twilight's Hammer. Find a group before you go.
+    >>Its Horde quests come from Da'grosh, Krom'rosh and Tran'gul at the end of chapter 4. Steps for quests you do not have are skipped.
+step
+    .xp <40,1
+    .goto 2548,59.4,45.6
+    .target Krom'rosh
+    .accept 94968 >>If you do not have Eye of Mugg yet, accept it from Krom'rosh.
+step
+    .xp <39,1
+    .goto 2548,59.4,44.0
+    .target Tran'gul
+    .accept 94972 >>If you do not have Tome of Twilight yet, accept it from Tran'gul.
+step
+    .xp <38,1
+    .isQuestTurnedIn 94768
+    .goto 2548,33.4,38.0
+    .target Da'grosh
+    .accept 94975 >>If you do not have A Token of Vengeance yet, accept it from Da'grosh west of the Twilight's Shroud on the way.
+step
+    .goto 2548,39.0,39.0
+    >>Meet your group at the meeting stone in front of the closed fortress gates. The dungeon portal is in a small cave just west of the gates.
+step
+    .goto 2548,37.5,37.2
+    >>Enter the small cave west of the fortress gates and take the portal into Krol'dok Stronghold.
+step
+    #completewith KroldokDone
+    .isOnQuest 94975
+    >>Loot Cultist Ears from the Twilight's Hammer throughout the dungeon.
+    .complete 94975,1
+step
+    #optional
+    #completewith KroldokDone
+    .isQuestAvailable 94973
+    >>If a Krol'dok Moulding drops, take it and use it to start Krol'dok Moulding. Kreza Darkthorn in Rog'mar takes it after the run.
+    .collect 267137,1,94973
+    .use 267137
+    .accept 94973
+step
+    #completewith KroldokDone
+    .isOnQuest 94972
+    >>Kill Nar'gurk and take the Tome of Twilight.
+    .complete 94972,1
+    .mob Nar'gurk
+step
+    .isOnQuest 94968
+    >>Clear to the last boss, Overlord Mugg, and take the Eye of Mugg.
+    .complete 94968,1
+    .mob Overlord Mugg
+step
+    .isOnQuest 94975
+    >>Finish the 15 Cultist Ears before you leave.
+    .complete 94975,1
+step
+    #label KroldokDone
+    +Check your quest log before leaving: the Tome of Twilight, the Eye of Mugg and the Cultist Ears should be done. Then leave the dungeon.
+step
+    .isQuestComplete 94975
+    .goto 2548,33.4,38.0
+    .target Da'grosh
+    .turnin 94975 >>Turn in A Token of Vengeance to Da'grosh, west of the Twilight's Shroud.
+step
+    .isQuestComplete 94972
+    .goto 2548,59.4,44.0
+    .target Tran'gul
+    .turnin 94972 >>Return to Rog'mar and turn in Tome of Twilight to Tran'gul.
+step
+    .isQuestComplete 94968
+    .goto 2548,59.4,45.6
+    .target Krom'rosh
+    .turnin 94968 >>Turn in Eye of Mugg to Krom'rosh.
+step
+    .isOnQuest 94973
+    .goto 2548,59.8,46.0
+    .target Kreza Darkthorn
+    .turnin 94973 >>Show the Krol'dok Moulding to Kreza Darkthorn.
+step
+    #optional
+    .xp <38,1
+    .isQuestTurnedIn 94973
+    .goto 2548,59.8,46.0
+    .target Kreza Darkthorn
+    .accept 94974 >>Optional: accept Key Ingredients. Kreza needs 4 Thick Leather and 12 Iron Bars (crafted or bought) to make the Krol'dok Compound Key. Skip it otherwise.
+step
+    #optional
+    .isQuestComplete 94974
+    .goto 2548,59.8,46.0
+    .target Kreza Darkthorn
+    .turnin 94974 >>Turn in Key Ingredients once you have the leather and bars.
+step
+    +Krol'dok Stronghold is finished. On the Other Side sends you on to Camp Mojache in Feralas.
 ]=])

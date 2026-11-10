@@ -4,6 +4,7 @@ local CHAPTERS = {
     "RG - 02 Sunnyglade and Bolder'ok",
     "RG - 03 Powderfuse Port",
     "RG - 04 Twilight's Shroud",
+    "RG - 05 Krol'dok Stronghold",
 }
 local assertions = 0
 local function check(condition, message)
@@ -148,6 +149,9 @@ local followups = {
     { 95433, 95432 },
     { 94768, 94745, 94748 },
     { 95278, 94768 },
+    { 94975, 94768 },
+    { 94968, 95278 },
+    { 94974, 94973 },
 }
 for _, chain in ipairs(followups) do
     local follow = chain[1]
