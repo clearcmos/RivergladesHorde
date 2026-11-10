@@ -27,7 +27,7 @@ In RXP's guide picker, select **CMOS Riverglades Horde (Experimental)**, then **
 ## What the guide does and does not do
 
 - Turn-ins appear only for quests that are ready, and follow-up pickups wait for the quest that unlocks them. Objective steps show RXP's live progress counters.
-- Where enough spawn data exists (32 steps), kill and collect steps draw an outline around where the mobs or objects were seen, using RXP's loop waypoints; the arrow cycles around it. The outlines come from early player traces and are approximate. Other steps show a single marker.
+- Kill and collect steps use RXP's loop waypoints, so the arrow cycles around the area instead of stopping at one point: 32 steps outline where their mobs or objects were seen, and 9 with only one or two known spots circle them. The areas come from early player traces and are approximate. Named bosses, ring fights, caves and one-spot objectives show a single marker.
 - Elite kills (Snargl, Ghostmaw, Ombassa, Scaldaron, Old Rot-Chum, Scoutmaster Vargas), Step Two: More Rock (Heavy Weightstones) and Not My Circus (Cooking 200) are optional steps.
 - Show Them How It's Done and Bristle Hills Bandits are offered at the earliest likely point with a skip note and again later, because their unlock order is not documented.
 - Arrival is a zone step with written directions (the road south from the Badlands, or the Kargath flight once Rog'mar is known), then an arrow to Rog'mar. The Rog'mar flight path step finishes when you reach the flight master, because RXP cannot yet detect that flight path.

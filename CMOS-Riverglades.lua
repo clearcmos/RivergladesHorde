@@ -113,8 +113,15 @@ step
     .complete 96104,1
     .mob Roving Tallstrider
 step
+    #loop
     .isOnQuest 96108
-    .goto 2548,65.5,58.3
+    .goto 2548,62.9,58.5,0
+    .goto 2548,66.5,58.5,40,0
+    .goto 2548,64.7,63.3,40,0
+    .goto 2548,61.1,63.3,40,0
+    .goto 2548,59.3,58.5,40,0
+    .goto 2548,61.1,53.7,40,0
+    .goto 2548,64.7,53.7,40,0
     >>Kill Glade Vipers south-east of Rog'mar for 4 Glade Viper Venom.
     .complete 96108,1
     .mob Glade Viper
@@ -200,13 +207,27 @@ step
     .mob Turner's Mill Lumberjack
     .mob Woodworker
 step
+    #loop
     .isOnQuest 95951
-    .goto 2548,41.6,60.0
+    .goto 2548,41.6,60.0,0
+    .goto 2548,44.2,60.0,40,0
+    .goto 2548,42.9,63.5,40,0
+    .goto 2548,40.3,63.5,40,0
+    .goto 2548,39.0,60.0,40,0
+    .goto 2548,40.3,56.5,40,0
+    .goto 2548,42.9,56.5,40,0
     >>Collect Wood Bundles from the Peasant Woodpiles around Turner's Logging Camp, then fletch them into 20 Makeshift Stickin' Spears.
     .complete 95951,1
 step
+    #loop
     .isOnQuest 93788
-    .goto 2548,42.4,59.0
+    .goto 2548,42.0,59.6,0
+    .goto 2548,44.9,59.6,40,0
+    .goto 2548,43.4,63.6,40,0
+    .goto 2548,40.5,63.6,40,0
+    .goto 2548,39.0,59.6,40,0
+    .goto 2548,40.5,55.7,40,0
+    .goto 2548,43.4,55.7,40,0
     >>Finish the 10 Woodworker's Axes.
     .complete 93788,1
     .mob Turner's Mill Lumberjack
@@ -296,8 +317,15 @@ step
     .mob Farholde Priest
     .mob Farholde Scout
 step
+    #loop
     .isOnQuest 93787
-    .goto 2548,45.4,81.4
+    .goto 2548,45.4,81.4,0
+    .goto 2548,48.0,81.4,40,0
+    .goto 2548,46.7,84.9,40,0
+    .goto 2548,44.1,84.9,40,0
+    .goto 2548,42.8,81.4,40,0
+    .goto 2548,44.1,77.9,40,0
+    .goto 2548,46.7,77.9,40,0
     >>Back at Meadowsbrook, steal 6 Feed Satchels from the farm.
     .complete 93787,1
 step
@@ -358,8 +386,15 @@ step
     .target Gorg
     .accept 94481 >>Accept A Serving of Strength.
 step
+    #loop
     .isOnQuest 94481
-    .goto 2548,59.0,35.5
+    .goto 2548,59.0,35.5,0
+    .goto 2548,61.6,35.5,40,0
+    .goto 2548,60.3,39.0,40,0
+    .goto 2548,57.7,39.0,40,0
+    .goto 2548,56.4,35.5,40,0
+    .goto 2548,57.7,32.0,40,0
+    .goto 2548,60.3,32.0,40,0
     >>North of Rog'mar at the training grounds, use the Hearty Stew to feed 8 Rog'mar Trainees.
     .complete 94481,1
     .use 265066
@@ -530,8 +565,15 @@ step
     .mob Cinderscale Whelp
     .mob Cinderscale Warrior
 step
+    #loop
     .isOnQuest 95934
-    .goto 2548,30.2,73.3
+    .goto 2548,30.2,73.3,0
+    .goto 2548,32.8,73.3,40,0
+    .goto 2548,31.5,76.8,40,0
+    .goto 2548,28.9,76.8,40,0
+    .goto 2548,27.6,73.3,40,0
+    .goto 2548,28.9,69.8,40,0
+    .goto 2548,31.5,69.8,40,0
     >>Finish Proof of Profit: loot the Cubic Draconia crystal in the dragon caves.
     .complete 95934,1
 step
@@ -748,15 +790,29 @@ step
     .complete 95162,1
     .mob Mature Paletusk
 step
+    #loop
     .isOnQuest 95163
-    .goto 2548,71.6,35.6
+    .goto 2548,74.2,37.3,0
+    .goto 2548,78.1,37.3,40,0
+    .goto 2548,76.1,42.6,40,0
+    .goto 2548,72.2,42.6,40,0
+    .goto 2548,70.2,37.3,40,0
+    .goto 2548,72.2,32.0,40,0
+    .goto 2548,76.1,32.0,40,0
     >>South of the farm, swat 10 Young Paletusks with the Swineherd's Staff to send them back to their pens.
     .complete 95163,1
     .use 268521
     .mob Young Paletusk
 step
+    #loop
     .isOnQuest 95162
-    .goto 2548,73.0,34.0
+    .goto 2548,71.0,33.4,0
+    .goto 2548,74.2,33.4,40,0
+    .goto 2548,72.6,37.7,40,0
+    .goto 2548,69.5,37.7,40,0
+    .goto 2548,67.9,33.4,40,0
+    .goto 2548,69.5,29.1,40,0
+    .goto 2548,72.6,29.1,40,0
     >>Finish the 10 Chunks of Boar Meat from Mature Paletusks.
     .complete 95162,1
     .mob Mature Paletusk
@@ -1110,8 +1166,15 @@ step
     .goto 2548,78.5,53.9
     .accept 95120 >>Optional elite: take WANTED: Old Rot-Chum from the board.
 step
+    #loop
     .isOnQuest 95254
-    .goto 2548,80.0,54.0
+    .goto 2548,80.0,53.5,0
+    .goto 2548,82.6,53.5,40,0
+    .goto 2548,81.3,57.0,40,0
+    .goto 2548,78.6,57.0,40,0
+    .goto 2548,77.3,53.5,40,0
+    .goto 2548,78.6,50.0,40,0
+    .goto 2548,81.3,50.0,40,0
     >>Kill Trapclaw at the water's edge by the port and take Trapclaw's Pincer.
     .complete 95254,1
     .mob Trapclaw

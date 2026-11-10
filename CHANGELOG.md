@@ -4,7 +4,7 @@
 
 - First public release, named CMOS Riverglades Horde (Experimental). Experimental: no guarantee that every step, location or quest order is right. Requires RestedXP Guides. Horde only.
 - Objective steps show RXP's live progress counters (for example 3/6).
-- 32 kill and collect steps outline where their mobs or objects were seen, using RXP's loop waypoints on the map and minimap. Steps with too little spawn data keep a single marker.
+- 41 kill and collect steps send the arrow around a loop: 32 outline where their mobs or objects were seen, and 9 with only one or two known spots circle them so you scout the area. Named bosses, ring fights, caves and one-spot objectives keep a single marker.
 - The guide's RXP group is now "CMOS Riverglades Horde (Experimental)"; select it again in RXP's guide picker after updating.
 - Loads only on WoW Forever (`AllowLoadGameType: camelot`).
 
