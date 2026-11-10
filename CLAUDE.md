@@ -22,6 +22,7 @@ The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Rivergl
 ## Guide conventions
 
 - Put objective instructions on their own `>>` line and leave `.complete <quest>,<n>` bare; text on the `.complete` line replaces RXP's live counter.
+- Kill and collect steps with enough spawn data use RXP `#loop` outlines: an anchor `.goto 2548,x,y,0` and ring points `.goto 2548,x,y,40,0` (RXP's own convention). How the rings were derived is in SOURCES.md; regenerate them from updated spawn data rather than hand-editing points.
 - Coordinates are `.goto 2548,x,y` zone percentages. The pack must stay standalone: no `.cmosroute` or other CMOS Dungeon Guides directives, since that pack's travel helper cannot be loaded twice.
 - Do not use `.fp` for Forever's new flight masters. `.fp <name>` resolves the node through RXP's flight database by name, which has no Rog'mar entry, so the step never completes for a character who already knows the path. Use a `.goto` stop at the flight master instead.
 - Every turn-in is gated on the same quest being ready (`.isQuestComplete`) or, for deliveries, in the log (`.isOnQuest`).

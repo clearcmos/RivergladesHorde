@@ -54,6 +54,14 @@ for index, name in ipairs(CHAPTERS) do
         end
     end
     for _, step in ipairs(guide.steps) do
+        if step.loop then
+            local points = 0
+            for _, element in ipairs(step.elements) do
+                points = points + (element.tag == "goto" and 1 or 0)
+            end
+            -- A loop outline needs an anchor plus at least three ring points to enclose an area.
+            check(points >= 4, "Loop outline with too few points in " .. name)
+        end
         if step.completewith and step.completewith ~= "next" then
             check(labels[step.completewith], "Missing sticky-step destination in " .. name)
         end

@@ -16,6 +16,8 @@ Evidence, in order of use:
 - Frames from Alliance YouTube streams with on-screen coordinates (videos `_X_xywiZ0cU`, `z3--_goqLWA`, `l1cid3JF6dM`, `BSzcYd_pn6A`, `ie6o0KcWJoI`) for the neutral port quests: the powder kegs inside the Windstead buildings, Admiral Lamora and his stash on the second ship, the Rotflesh Mushrooms in Twilight Hollow, the Marsh Gas vents, the Cubic Draconia and the Tallstrider Call spot.
 - A YouTube playthrough (video `f88IUsWXYuQ`) reporting that Tran'gul's Twilight quests appear only after Show Them How It's Done 94483 is turned in, and that the Bloodmaster's Ring entry costs 1 gold.
 
+Loop outlines: each kill or collect step's ring is the convex hull of the known spawn points for its mobs within about 10 map units of the step's marker, padded outward by 1.5 units and reduced to at most eight points. Points come from Questie's master-branch Forever NPC traces and generated NPC data, the installed QuestieDB spawns and Wowhead's objective points; when a step's mobs have fewer than three points, the quest's own objective points are used. Steps aimed at one spot (the ship charges, Lamora's ship, the mushroom cave) and steps with fewer than three points or under two map units of spread keep a single marker.
+
 Prerequisite decisions:
 
 - The quest-series order published for the ogre storyline (Rise Up! first, Land of Giants last) runs against its givers: Land of Giants is Tran'gul's quest to Clugfist, and Clugfist then gives Might Makes Right. The route follows the giver flow (Digging for Answers, Clubtoe's chain, Spread the Word, Land of Giants, Clugfist), which the playthrough also reports. AllTheThings' The Purple Ones 95417 ← Might Makes Right 95424 link comes from that reversed series and is not used.

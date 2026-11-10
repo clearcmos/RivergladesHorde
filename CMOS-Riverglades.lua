@@ -75,8 +75,14 @@ step
     .goto 2548,61.6,58.8
     .accept 96103 >>Ride south and search the Picked Carcass for the Gnawed Skull. This starts A Feast for Buzzards.
 step
+    #loop
     .isOnQuest 96107
-    .goto 2548,66.0,50.0
+    .goto 2548,66.4,51.1,0
+    .goto 2548,60.8,59.9,40,0
+    .goto 2548,60.2,50.3,40,0
+    .goto 2548,64.5,46.4,40,0
+    .goto 2548,71.9,49.1,40,0
+    .goto 2548,72.5,49.5,40,0
     >>Kill Low Plains Buzzards on the plains east of Rog'mar for 6 Plains Buzzard Feathers.
     .complete 96107,1
     .mob Low Plains Buzzard
@@ -113,8 +119,13 @@ step
     .complete 96108,1
     .mob Glade Viper
 step
+    #loop
     .isOnQuest 96104
-    .goto 2548,62.0,49.0
+    .goto 2548,64.0,49.4,0
+    .goto 2548,58.2,47.4,40,0
+    .goto 2548,64.0,45.5,40,0
+    .goto 2548,66.4,46.8,40,0
+    .goto 2548,70.1,56.5,40,0
     >>Finish the Intact Tallstrider Beak.
     .complete 96104,1
     .mob Roving Tallstrider
@@ -140,8 +151,12 @@ step
     .target Neza Bloodsnout
     .accept 96105 >>Optional elite: accept King of the Wild Plains. Skip this step if you will not fight a level 41 elite lion.
 step
+    #loop
     .isOnQuest 96109
-    .goto 2548,59.5,53.0
+    .goto 2548,60.0,52.5,0
+    .goto 2548,57.7,56.7,40,0
+    .goto 2548,60.4,50.5,40,0
+    .goto 2548,62.3,48.7,40,0
     >>Just south of Rog'mar, kill Wildplains Patriarchs and Huntresses for 6 Prized Lion Hides.
     .complete 96109,1
     .mob Wildplains Patriarch
@@ -197,8 +212,13 @@ step
     .mob Turner's Mill Lumberjack
     .mob Woodworker
 step
+    #loop
     .isOnQuest 93786
-    .goto 2548,45.4,81.4
+    .goto 2548,45.6,80.5,0
+    .goto 2548,44.4,77.6,40,0
+    .goto 2548,45.2,76.5,40,0
+    .goto 2548,47.3,84.8,40,0
+    .goto 2548,45.0,82.9,40,0
     >>Ride south to the Meadowsbrook farm and kill 12 Meadowsbrook Farmhands. Watch for Farholde patrols.
     .complete 93786,1
     .mob Meadowsbrook Farmhand
@@ -244,15 +264,26 @@ step
     .target Tan'jani
     .accept 95955 >>Accept Stick 'Em.
 step
+    #loop
     #optional
     .isOnQuest 95992
-    .goto 2548,53.7,41.7
+    .goto 2548,56.6,44.4,0
+    .goto 2548,52.6,40.7,40,0
+    .goto 2548,61.2,47.3,40,0
+    .goto 2548,55.4,46.2,40,0
     >>Optional elite: Ghostmaw patrols the river from Rog'mar down past Sunnyglade. Kill it for Ghostmaw's Fang when you meet it.
     .complete 95992,1
     .unitscan Ghostmaw
 step
+    #loop
     .isOnQuest 95955
-    .goto 2548,50.2,51.7
+    .goto 2548,48.8,53.8,0
+    .goto 2548,41.8,54.8,40,0
+    .goto 2548,42.9,53.8,40,0
+    .goto 2548,57.1,47.1,40,0
+    .goto 2548,55.9,53.3,40,0
+    .goto 2548,47.5,58.2,40,0
+    .goto 2548,42.2,57.2,40,0
     >>Impale 10 Freshwater Crocolisks along the river between Rog'mar and Sunnyglade.
     .complete 95955,1
     .mob Freshwater Crocolisk
@@ -270,8 +301,16 @@ step
     >>Back at Meadowsbrook, steal 6 Feed Satchels from the farm.
     .complete 93787,1
 step
+    #loop
     .isOnQuest 94483
-    .goto 2548,47.0,66.0
+    .goto 2548,47.9,66.7,0
+    .goto 2548,42.0,60.1,40,0
+    .goto 2548,48.8,63.6,40,0
+    .goto 2548,53.2,70.5,40,0
+    .goto 2548,52.1,72.0,40,0
+    .goto 2548,50.7,71.7,40,0
+    .goto 2548,44.4,65.2,40,0
+    .goto 2548,42.9,62.2,40,0
     >>Finish the Farholde Priests and Scouts between Meadowsbrook and the river.
     .complete 94483,1
     .complete 94483,2
@@ -330,8 +369,16 @@ step
     .target Gorg
     .turnin 94481 >>Turn in A Serving of Strength.
 step
+    #loop
     .isOnQuest 94483
-    .goto 2548,47.0,66.0
+    .goto 2548,47.9,66.7,0
+    .goto 2548,42.0,60.1,40,0
+    .goto 2548,48.8,63.6,40,0
+    .goto 2548,53.2,70.5,40,0
+    .goto 2548,52.1,72.0,40,0
+    .goto 2548,50.7,71.7,40,0
+    .goto 2548,44.4,65.2,40,0
+    .goto 2548,42.9,62.2,40,0
     >>If Show Them How It's Done is still open, return south of the river and finish the Farholde Priests and Scouts.
     .complete 94483,1
     .complete 94483,2
@@ -373,21 +420,37 @@ step
     .mob Twilight Shadowmancer
     .mob Twilight Neophyte
 step
+    #loop
     .isOnQuest 94672
-    .goto 2548,43.9,48.3
+    .goto 2548,44.7,49.1,0
+    .goto 2548,42.3,53.4,40,0
+    .goto 2548,42.9,47.2,40,0
+    .goto 2548,47.3,42.3,40,0
+    .goto 2548,45.1,53.9,40,0
     >>Kill Twilight Neophytes on the west side of Sunnyglade.
     .complete 94672,3
     .mob Twilight Neophyte
 step
+    #loop
     .isOnQuest 94680
-    .goto 2548,45.5,55.8
+    .goto 2548,45.7,55.3,0
+    .goto 2548,44.4,57.3,40,0
+    .goto 2548,47.0,52.7,40,0
+    .goto 2548,45.1,57.2,40,0
     >>Kill Twilight Shadowmancers in southern Sunnyglade for 3 Twilight Missives.
     .complete 94680,1
     .mob Twilight Shadowmancer
 step
+    #loop
     #label SunnygladeDone
     .isOnQuest 94672
-    .goto 2548,50.0,48.3
+    .goto 2548,47.5,49.9,0
+    .goto 2548,40.8,43.6,40,0
+    .goto 2548,51.3,40.0,40,0
+    .goto 2548,56.1,46.0,40,0
+    .goto 2548,53.3,55.5,40,0
+    .goto 2548,44.7,57.4,40,0
+    .goto 2548,41.6,52.8,40,0
     >>Finish the Twilight Raiders on the east side of Sunnyglade, and any Neophytes or Shadowmancers still needed.
     .complete 94672,1
     .complete 94672,2
@@ -396,8 +459,15 @@ step
     .mob Twilight Shadowmancer
     .mob Twilight Neophyte
 step
+    #loop
     .isOnQuest 94961
-    .goto 2548,47.0,50.0
+    .goto 2548,47.5,49.9,0
+    .goto 2548,40.8,43.6,40,0
+    .goto 2548,51.3,40.0,40,0
+    .goto 2548,56.1,46.0,40,0
+    .goto 2548,53.3,55.5,40,0
+    .goto 2548,44.7,57.4,40,0
+    .goto 2548,41.6,52.8,40,0
     >>Finish the 20 Twilight Finger Bones.
     .complete 94961,1
     .mob Twilight Raider
@@ -445,8 +515,15 @@ step
     >>Look for a piece of Cubic Draconia in the dragon caves while you clear them.
     .complete 95934,1
 step
+    #loop
     .isOnQuest 95792
-    .goto 2548,29.6,73.2
+    .goto 2548,29.7,73.3,0
+    .goto 2548,28.5,71.1,40,0
+    .goto 2548,29.6,69.4,40,0
+    .goto 2548,31.0,76.3,40,0
+    .goto 2548,30.2,77.0,40,0
+    .goto 2548,29.3,76.3,40,0
+    .goto 2548,28.0,72.1,40,0
     >>Kill Cinderscale Whelps and Warriors in the caves south of Gelinda.
     .complete 95792,1
     .complete 95792,2
@@ -486,8 +563,15 @@ step
     .mob Redridge Mystic
     .mob Redridge Trapper
 step
+    #loop
     .isOnQuest 94532
-    .goto 2548,17.5,71.5
+    .goto 2548,18.6,68.2,0
+    .goto 2548,15.1,67.8,40,0
+    .goto 2548,16.6,66.2,40,0
+    .goto 2548,19.0,65.4,40,0
+    .goto 2548,23.1,66.9,40,0
+    .goto 2548,16.9,73.2,40,0
+    .goto 2548,15.9,73.7,40,0
     >>West of the dragon caves in the Bristle Hills, kill Redridge Mystics, Trappers and Brutes.
     .complete 94532,1
     .complete 94532,2
@@ -503,9 +587,16 @@ step
     .complete 94533,1
     .unitscan Snargl
 step
+    #loop
     #label BristleDone
     .isOnQuest 94535
-    .goto 2548,17.5,71.5
+    .goto 2548,18.6,68.2,0
+    .goto 2548,15.1,67.8,40,0
+    .goto 2548,16.6,66.2,40,0
+    .goto 2548,19.0,65.4,40,0
+    .goto 2548,23.1,66.9,40,0
+    .goto 2548,16.9,73.2,40,0
+    .goto 2548,15.9,73.7,40,0
     >>Finish the 40 Stolen Ore.
     .complete 94535,1
     .mob Redridge Brute
@@ -702,8 +793,13 @@ step
     >>Loot Good Rocks from the Rock Piles along the river south-east of Bolder'ok.
     .complete 95183,1
 step
+    #loop
     .isOnQuest 95424
-    .goto 2548,75.0,26.0
+    .goto 2548,75.6,28.3,0
+    .goto 2548,73.6,24.0,40,0
+    .goto 2548,76.7,25.0,40,0
+    .goto 2548,76.9,32.1,40,0
+    .goto 2548,75.5,32.1,40,0
     >>East of Bolder'ok, kill Twilight Maulers and Twilight Firecallers.
     .complete 95424,1
     .complete 95424,2
@@ -728,8 +824,14 @@ step
     .target Clugfist
     .turnin 94556 >>Escort Jom-jom back to Clugfist in Bolder'ok and turn in Jom-jom's Escape.
 step
+    #loop
     .isOnQuest 95183
-    .goto 2548,67.0,29.0
+    .goto 2548,68.7,29.6,0
+    .goto 2548,64.3,23.8,40,0
+    .goto 2548,65.7,24.2,40,0
+    .goto 2548,74.2,35.9,40,0
+    .goto 2548,72.7,35.2,40,0
+    .goto 2548,65.7,28.5,40,0
     >>Finish the 10 Good Rocks from Rock Piles along the river.
     .complete 95183,1
 step
@@ -935,8 +1037,15 @@ step
     .target Sleebo Fizzlespout
     .accept 96063 >>East of Rog'mar, accept Gaseous Gold from Sleebo Fizzlespout.
 step
+    #loop
     .isOnQuest 96063
-    .goto 2548,61.0,59.5
+    .goto 2548,61.7,58.4,0
+    .goto 2548,57.3,55.9,40,0
+    .goto 2548,62.4,53.7,40,0
+    .goto 2548,64.3,53.6,40,0
+    .goto 2548,64.4,54.8,40,0
+    .goto 2548,62.9,64.6,40,0
+    .goto 2548,59.5,62.7,40,0
     >>Collect Marsh Gas Vials from the gas vents around the marshy ponds south-west of Sleebo.
     .complete 96063,1
 step
@@ -1023,31 +1132,48 @@ step
     .goto 2548,72.3,61.8
     .accept 95260 >>South-west of the port, take the Painted Hide to start Terrors From the Deep.
 step
+    #loop
     .isOnQuest 95118
-    .goto 2548,72.4,69.5
+    .goto 2548,69.5,72.8,0
+    .goto 2548,64.0,74.3,40,0
+    .goto 2548,75.2,66.1,40,0
+    .goto 2548,67.1,79.5,40,0
     >>On the shore and islands south of the port, kill Murloc Warriors and Oracles.
     .complete 95118,1
     .complete 95118,2
     .mob Murloc Warrior
     .mob Murloc Oracle
 step
+    #loop
     .isOnQuest 95121
-    .goto 2548,72.4,69.5
+    .goto 2548,69.5,72.8,0
+    .goto 2548,64.0,74.3,40,0
+    .goto 2548,75.2,66.1,40,0
+    .goto 2548,67.1,79.5,40,0
     >>Loot 12 Saltwater Murloc Eyes from the murlocs.
     .complete 95121,1
     .mob Murloc Warrior
     .mob Murloc Oracle
 step
+    #loop
     #optional
     .isOnQuest 95120
-    .goto 2548,77.5,73.4
+    .goto 2548,77.1,73.3,0
+    .goto 2548,74.2,72.3,40,0
+    .goto 2548,77.9,68.7,40,0
+    .goto 2548,79.0,73.7,40,0
+    .goto 2548,77.2,79.5,40,0
     >>Optional elite: kill Old Rot-Chum, a level 42 elite on the murloc islands, and take the Rot-Covered Harpoon.
     .complete 95120,1
     .unitscan Old Rot-Chum
 step
+    #loop
     #label PortSouthDone
     .isOnQuest 95121
-    .goto 2548,73.8,60.4
+    .goto 2548,74.1,64.5,0
+    .goto 2548,73.7,58.9,40,0
+    .goto 2548,74.7,67.4,40,0
+    .goto 2548,74.2,68.7,40,0
     >>Finish the 6 Sand Crawler Meat.
     .complete 95121,2
     .mob Sand Crawler
@@ -1106,17 +1232,35 @@ step
     .mob Eastsea Buccaneer
     .mob Eastsea Musketeer
 step
+    #loop
     .isOnQuest 95119
-    .goto 2548,87.5,40.5
+    .goto 2548,84.9,39.4,0
+    .goto 2548,80.3,43.7,40,0
+    .goto 2548,80.3,42.3,40,0
+    .goto 2548,85.1,29.9,40,0
+    .goto 2548,89.3,32.3,40,0
+    .goto 2548,89.8,33.5,40,0
+    .goto 2548,89.9,40.4,40,0
+    .goto 2548,83.8,46.9,40,0
+    .goto 2548,81.0,46.7,40,0
     >>On the beach north of the port, kill Eastsea Buccaneers and Musketeers.
     .complete 95119,1
     .complete 95119,2
     .mob Eastsea Buccaneer
     .mob Eastsea Musketeer
 step
+    #loop
     #label PirateBeach
     .isOnQuest 95288
-    .goto 2548,87.5,40.5
+    .goto 2548,84.9,39.4,0
+    .goto 2548,80.3,43.7,40,0
+    .goto 2548,80.3,42.3,40,0
+    .goto 2548,85.1,29.9,40,0
+    .goto 2548,89.3,32.3,40,0
+    .goto 2548,89.8,33.5,40,0
+    .goto 2548,89.9,40.4,40,0
+    .goto 2548,83.8,46.9,40,0
+    .goto 2548,81.0,46.7,40,0
     >>Finish the 8 Smuggled Goods.
     .complete 95288,1
     .mob Eastsea Buccaneer
@@ -1145,16 +1289,28 @@ step
     .target Friz Frazzlespark
     .accept 95293 >>Accept Smuggler's Special. Captain Bentcoin's ship is visited on the last pirate trip.
 step
+    #loop
     .isOnQuest 95122
-    .goto 2548,78.3,34.5
+    .goto 2548,77.1,33.0,0
+    .goto 2548,74.9,29.9,40,0
+    .goto 2548,76.8,28.9,40,0
+    .goto 2548,79.1,34.8,40,0
+    .goto 2548,79.1,37.0,40,0
+    .goto 2548,75.9,35.3,40,0
     >>North of the port in the ruins of Windstead, kill Eastsea Raiders and Bombardiers.
     .complete 95122,1
     .complete 95122,2
     .mob Eastsea Raider
     .mob Eastsea Bombardier
 step
+    #loop
     .isOnQuest 95123
-    .goto 2548,78.5,35.8
+    .goto 2548,78.8,35.3,0
+    .goto 2548,77.1,33.7,40,0
+    .goto 2548,79.1,30.5,40,0
+    .goto 2548,79.7,38.4,40,0
+    .goto 2548,79.2,38.3,40,0
+    .goto 2548,77.8,37.1,40,0
     >>Loot 5 Eastsea Powder Kegs from inside the Windstead buildings.
     .complete 95123,1
 step
@@ -1163,16 +1319,26 @@ step
     >>North-west of Windstead, gather 8 Rotflesh Mushrooms in the Twilight Hollow cave.
     .complete 95261,2
 step
+    #loop
     #optional
     .isOnQuest 95882
-    .goto 2548,75.6,34.2
+    .goto 2548,75.1,34.0,0
+    .goto 2548,75.0,30.1,40,0
+    .goto 2548,75.6,35.5,40,0
+    .goto 2548,75.1,37.8,40,0
     >>Optional elite: kill Scoutmaster Vargas just west of Windstead and take the Scoutmaster's Eye.
     .complete 95882,1
     .mob Scoutmaster Vargas
 step
+    #loop
     #label ArgoReady
     .isOnQuest 95261
-    .goto 2548,78.6,49.6
+    .goto 2548,78.1,50.9,0
+    .goto 2548,69.5,50.1,40,0
+    .goto 2548,83.2,43.8,40,0
+    .goto 2548,85.2,45.2,40,0
+    .goto 2548,80.3,58.5,40,0
+    .goto 2548,78.0,58.1,40,0
     >>Finish the 15 Beast Entrails on the way back.
     .complete 95261,1
     .mob Shore Crawler
@@ -1370,8 +1536,14 @@ step
     .mob Twilight Corrupter
     .mob Twilight Champion
 step
+    #loop
     .isOnQuest 94745
-    .goto 2548,27.4,38.8
+    .goto 2548,29.3,43.1,0
+    .goto 2548,26.8,37.4,40,0
+    .goto 2548,28.6,35.5,40,0
+    .goto 2548,33.5,44.3,40,0
+    .goto 2548,32.9,45.3,40,0
+    .goto 2548,27.4,49.9,40,0
     >>Enter the Twilight's Shroud and kill 8 Twilight Champions.
     .complete 94745,3
     .mob Twilight Champion
@@ -1382,21 +1554,36 @@ step
     .complete 95433,1
     .mob Executioner Morg
 step
+    #loop
     .isOnQuest 94745
-    .goto 2548,29.6,44.2
+    .goto 2548,32.0,44.7,0
+    .goto 2548,26.6,45.9,40,0
+    .goto 2548,28.1,43.9,40,0
+    .goto 2548,36.2,44.4,40,0
+    .goto 2548,37.2,44.5,40,0
     >>Kill 8 Twilight Fanatics.
     .complete 94745,1
     .mob Twilight Fanatic
 step
+    #loop
     #label ShroudDone
     .isOnQuest 94745
-    .goto 2548,26.6,44.8
+    .goto 2548,28.0,43.7,0
+    .goto 2548,25.4,45.7,40,0
+    .goto 2548,29.0,35.2,40,0
+    .goto 2548,28.9,51.2,40,0
     >>Kill 8 Twilight Corrupters.
     .complete 94745,2
     .mob Twilight Corrupter
 step
+    #loop
     .isOnQuest 94748
-    .goto 2548,27.4,38.8
+    .goto 2548,29.3,43.1,0
+    .goto 2548,26.8,37.4,40,0
+    .goto 2548,28.6,35.5,40,0
+    .goto 2548,33.5,44.3,40,0
+    .goto 2548,32.9,45.3,40,0
+    .goto 2548,27.4,49.9,40,0
     >>Finish rescuing the 5 Rog'mar Scouts.
     .complete 94748,1
     .mob Twilight Champion
