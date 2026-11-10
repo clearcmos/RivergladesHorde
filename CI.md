@@ -11,7 +11,7 @@ The repository needs two Actions secrets:
 
 ## What ships
 
-`.pkgmeta` packages the repository as the `CMOS_Riverglades` folder and ignores everything that is not the addon: docs, tests, tools and config. The zip holds `CMOS_Riverglades.toc`, `CMOS-Riverglades.lua` and `LICENSE.md`. `CHANGELOG.md` becomes the release notes but is not in the zip.
+`.pkgmeta` packages the repository as the `RivergladesHorde` folder and ignores everything that is not the addon: docs, tests, tools and config. The zip holds `RivergladesHorde.toc`, `RivergladesHorde.lua` and `LICENSE.md`. `CHANGELOG.md` becomes the release notes but is not in the zip.
 
 `required-dependencies` lists RestedXP Guide (`restedxp-guide`, CurseForge project 486246), so each upload declares it and the CurseForge app installs it alongside.
 
@@ -20,8 +20,8 @@ The packager reads `## Interface: 16001` from the TOC and uploads the file for W
 ## Release steps
 
 1. Run `bash tools/check.sh`, luacheck and stylua (README, Development).
-2. Bump `## Version` in `CMOS_Riverglades.toc`, bump `#version` on each changed chapter in `CMOS-Riverglades.lua`, and add a `CHANGELOG.md` entry.
+2. Bump `## Version` in `RivergladesHorde.toc`, bump `#version` on each changed chapter in `RivergladesHorde.lua`, and add a `CHANGELOG.md` entry.
 3. Commit and push, then tag and push the tag: `git tag vX.Y.Z && git push origin main --tags`.
 4. Watch the run with `gh run watch`, then check the upload on CurseForge. A new file goes through review before it can be downloaded.
 
-To check a package without uploading, fetch the packager's `release.sh` and run `bash release.sh -d -z -t <repo> -r <outdir>` from outside the repository (`-d` skips the upload, `-z` the zip); `<outdir>/CMOS_Riverglades/` should hold only the three addon files.
+To check a package without uploading, fetch the packager's `release.sh` and run `bash release.sh -d -z -t <repo> -r <outdir>` from outside the repository (`-d` skips the upload, `-z` the zip); `<outdir>/RivergladesHorde/` should hold only the three addon files.

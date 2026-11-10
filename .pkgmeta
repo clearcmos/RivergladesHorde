@@ -1,4 +1,4 @@
-package-as: CMOS_Riverglades
+package-as: RivergladesHorde
 
 required-dependencies:
   - restedxp-guide

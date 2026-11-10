@@ -1,8 +1,8 @@
-# CMOS Riverglades Horde (Experimental)
+# Riverglades Horde (Beta)
 
 A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46, shown inside the RestedXP Guides addon.
 
-> **Experimental.** This guide was written from public quest data in the zone's first week, before any established guide covered it. There is no guarantee that every step, location, quest order or prerequisite is right, or that it works well at all. Skip any step that does not match the game. Horde only.
+> **Beta.** This guide was written from public quest data in the zone's first week, before any established guide covered it. There is no guarantee that every step, location, quest order or prerequisite is right, or that it works well at all. Skip any step that does not match the game. Horde only.
 
 ## Requirements
 
@@ -12,10 +12,10 @@ A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46,
 
 ## Install
 
-- **CurseForge app:** install CMOS Riverglades Horde (Experimental) and it updates with each release.
-- **Manually:** unzip the release into `World of Warcraft/_forever_/Interface/AddOns/` so the folder is `AddOns/CMOS_Riverglades`, then restart the game. To update, replace the folder.
+- **CurseForge app:** install Riverglades Horde (Beta) and it updates with each release.
+- **Manually:** unzip the release into `World of Warcraft/_forever_/Interface/AddOns/` so the folder is `AddOns/RivergladesHorde`, then restart the game. To update, replace the folder.
 
-In RXP's guide picker, select **CMOS Riverglades Horde (Experimental)**, then **Riverglades 36-46**, and start at **1. Rog'mar and the River**.
+In RXP's guide picker, select **Riverglades Horde (Beta)**, then **Riverglades 36-46**, and start at **1. Rog'mar and the River**.
 
 ## Chapters
 
@@ -40,8 +40,8 @@ Data sources and the decisions behind the quest order are in [SOURCES.md](SOURCE
 ## Development
 
 - `bash tools/check.sh`: Lua 5.1 syntax, the guide test against an installed RXPGuides (set `RXP_GUIDES_DIR` to its folder), and the tool tests. Needs LuaJIT, the Lua 5.1 compiler and Python 3. The guide test loads RXP's own parser and directive functions with WoW API stand-ins; it checks chapter links, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, progress counters and the arrival order, not in-game behavior. `tests/test_route.py` also audits the route for objectives left for a later visit to an area you have already worked.
-- `luacheck CMOS-Riverglades.lua tests --config .luacheckrc` (lint) and `stylua --check --config-path stylua.toml CMOS-Riverglades.lua tests` (format).
-- `python3 tools/install.py <path to Interface/AddOns>`: replaces the local `CMOS_Riverglades` folder with the files the packager ships.
+- `luacheck RivergladesHorde.lua tests --config .luacheckrc` (lint) and `stylua --check --config-path stylua.toml RivergladesHorde.lua tests` (format).
+- `python3 tools/install.py <path to Interface/AddOns>`: replaces the local `RivergladesHorde` folder with the files the packager ships.
 - Releases: see [CI.md](CI.md).
 
 ## License

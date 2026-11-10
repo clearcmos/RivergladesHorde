@@ -6,7 +6,7 @@ import shutil
 from pathlib import Path
 
 PROJECT = Path(__file__).resolve().parents[1]
-ADDON = "CMOS_Riverglades"
+ADDON = "RivergladesHorde"
 
 
 def addon_files(project: Path = PROJECT) -> list:
@@ -17,7 +17,7 @@ def addon_files(project: Path = PROJECT) -> list:
 
 
 def install(addons: Path, project: Path = PROJECT) -> Path:
-    """Replace AddOns/CMOS_Riverglades with this project's copy; RXPGuides must already be there."""
+    """Replace AddOns/RivergladesHorde with this project's copy; RXPGuides must already be there."""
     if not (addons / "RXPGuides" / "RXPGuides.toc").is_file():
         raise ValueError(f"No RXPGuides addon in {addons}")
     files = addon_files(project)

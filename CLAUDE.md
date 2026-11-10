@@ -1,16 +1,16 @@
-# CMOS Riverglades Horde (Experimental)
+# Riverglades Horde (Beta)
 
-Companion addon for RXPGuides on WoW Forever: a Horde questing route through the Riverglades zone, released on CurseForge and GitHub. Split from the CMOS Dungeon Guides pack on 2026-11-10 because it is a zone route, not a dungeon. Every public description says it is experimental, Horde only, and requires RestedXP Guides. Original guide content; no RXP source, paid guide exports or account state belong here.
+Companion addon for RXPGuides on WoW Forever: a Horde questing route through the Riverglades zone, released on CurseForge and GitHub. Split from the CMOS Dungeon Guides pack on 2026-11-10 because it is a zone route, not a dungeon. Every public description says it is a beta with no guarantee, Horde only, and requires RestedXP Guide. The repository keeps the CMOS name; the addon folder is `RivergladesHorde`. Original guide content; no RXP source, paid guide exports or account state belong here.
 
 ## Structure
 
-The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Riverglades` and ignores everything else.
+The repository root is the addon folder; `.pkgmeta` packages it as `RivergladesHorde` and ignores everything else.
 
-- `CMOS_Riverglades.toc`: Interface 16001, `AllowLoadGameType: camelot`, `Dependencies: RXPGuides`, Version. The title says Horde and Experimental.
-- `CMOS-Riverglades.lua`: five `RXPGuides.RegisterGuide` chapters, group `CMOS Riverglades Horde (Experimental)`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 05` (chapter 5 is the optional Krol'dok Stronghold dungeon run).
+- `RivergladesHorde.toc`: Interface 16001, `AllowLoadGameType: camelot`, `Dependencies: RXPGuides`, Version. The title says Horde and Beta.
+- `RivergladesHorde.lua`: five `RXPGuides.RegisterGuide` chapters, group `Riverglades Horde (Beta)`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 05` (chapter 5 is the optional Krol'dok Stronghold dungeon run).
 - `.github/workflows/release.yml`, `.pkgmeta`, `CI.md`: tag-driven packaging and CurseForge upload.
 - `assets/logo.png`: the CurseForge project logo (not packaged).
-- `tools/install.py`: replaces `AddOns/CMOS_Riverglades` locally with the files the packager ships; refuses an AddOns folder without RXPGuides.
+- `tools/install.py`: replaces `AddOns/RivergladesHorde` locally with the files the packager ships; refuses an AddOns folder without RXPGuides.
 - `tests/rxp_harness.lua`: loads the installed RXP `functions.lua`, `GuideLoader.lua` and flight database with WoW API stand-ins (`RXP_GUIDES_DIR` overrides the default path).
 - `tests/riverglades.lua`: chapter links and group, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, bare `.complete` lines, arrival order, and no CMOS Dungeon Guides directives.
 - `tests/test_route.py`: route audit. Fails when a quest already in the log, or free to take from a giver the route has already passed, has its objective area worked on an earlier, separate visit (the Gaseous Gold vents regression). Reviewed exceptions go in `REVIEWED` with the reason.
@@ -19,7 +19,7 @@ The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Rivergl
 
 ## Commands and release
 
-`bash tools/check.sh`, `luacheck CMOS-Riverglades.lua tests --config .luacheckrc`, `stylua --check --config-path stylua.toml CMOS-Riverglades.lua tests` (`nix shell nixpkgs#stylua nixpkgs#luajitPackages.luacheck` when they are not installed). Install locally with `python3 tools/install.py <AddOns path>`; a new addon folder or TOC change needs a client restart, Lua changes load with `/reload`. Release steps are in `CI.md`. Do not edit the user's saved variables or change their guide selection.
+`bash tools/check.sh`, `luacheck RivergladesHorde.lua tests --config .luacheckrc`, `stylua --check --config-path stylua.toml RivergladesHorde.lua tests` (`nix shell nixpkgs#stylua nixpkgs#luajitPackages.luacheck` when they are not installed). Install locally with `python3 tools/install.py <AddOns path>`; a new addon folder or TOC change needs a client restart, Lua changes load with `/reload`. Release steps are in `CI.md`. Do not edit the user's saved variables or change their guide selection.
 
 ## Guide conventions
 
@@ -39,3 +39,4 @@ The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Rivergl
 - 2026-11-10: Built inside CMOS Dungeon Guides, then split into this pack at the user's request so the zone route sits beside the dungeon guides instead of under them. The user chose a standalone pack over sharing or copying the dungeon pack's travel helper: arrival is a `.zone` step with written road and flight directions plus an arrow to Rog'mar. Quest data sources are in SOURCES.md.
 - 2026-11-10: At the user's request, ship as a companion addon folder instead of guide files installed inside RXPGuides, because the guide is handed to friends on Discord: unzip one folder, no Python, nothing in RXP changed, survives RXP updates. The user's own v0.1.0 file-based install was removed from RXPGuides when the addon was installed.
 - 2026-11-10: First public release (v0.3.0) at the user's request, through the same GitHub Actions and CurseForge pipeline as the user's other addons, so friends get patches through the CurseForge app. Renamed CMOS Riverglades Horde (Experimental): the user wants the name to say Horde and experimental, and every description to say there is no guarantee and that RestedXP Guides is required. The addon folder stays `CMOS_Riverglades` so earlier manual installs are replaced rather than duplicated.
+- 2026-11-10: Renamed CMOS Riverglades Horde (Experimental) to Riverglades Horde (Beta) at the user's request, because the name was too long; "CMOS" meant nothing to people searching. The RXP group changed with it, so existing users pick the guide again once. The addon folder became `RivergladesHorde` too (the user's call; nobody had it from CurseForge yet), so a manual install of an earlier version leaves a `CMOS_Riverglades` folder to delete. The repository name stays. Shipped as v0.3.1 while v0.3.0 was still in review.

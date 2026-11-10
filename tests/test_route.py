@@ -22,7 +22,7 @@ def yards(a, b):
 
 
 def steps():
-    text = (ROOT / "CMOS-Riverglades.lua").read_text()
+    text = (ROOT / "RivergladesHorde.lua").read_text()
     out = []
     for chapter in re.split(r"(?=RXPGuides\.RegisterGuide\(\[=\[)", text)[1:]:
         for body in re.split(r"(?m)^(?=step)", chapter)[1:]:

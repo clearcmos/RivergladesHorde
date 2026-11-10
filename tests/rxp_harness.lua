@@ -203,7 +203,7 @@ function Harness.Load(class, race, faction, level)
     end
     -- The .fp directive resolves flight masters through RXP's own flight database.
     assert(loadfile(root .. "/DB/forever/flightData.lua"))("RXPGuides", ns)
-    assert(loadfile("CMOS-Riverglades.lua"))("RXPGuides", ns)
+    assert(loadfile("RivergladesHorde.lua"))("RXPGuides", ns)
     return ns, state
 end
 

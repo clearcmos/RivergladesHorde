@@ -1,0 +1,9 @@
+## Interface: 16001
+## Title: Riverglades Horde (Beta)
+## Notes: Beta Horde questing guide for Riverglades (levels 36-46). Requires RestedXP Guide. No guarantee it works well.
+## Author: clearcmos
+## Version: 0.3.1
+## AllowLoadGameType: camelot
+## Dependencies: RXPGuides
+
+RivergladesHorde.lua

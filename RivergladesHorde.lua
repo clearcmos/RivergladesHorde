@@ -7,7 +7,7 @@ end
 RXPGuides.RegisterGuide([=[
 #forever
 << Horde
-#group CMOS Riverglades Horde (Experimental)
+#group Riverglades Horde (Beta)
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
@@ -16,7 +16,7 @@ RXPGuides.RegisterGuide([=[
 
 step
     +Riverglades is the new zone south of the Badlands. Rog'mar, in the middle of the zone, is the Horde hub.
-    >>Experimental guide: written from public quest data in the zone's first week, with no guarantee that every step, location or quest order is right. Skip any step that does not match the game.
+    >>Beta guide: written from public quest data in the zone's first week, with no guarantee that every step, location or quest order is right. Skip any step that does not match the game.
     >>This chapter works the Rog'mar quests around the river, Turner's Logging Camp, Meadowsbrook, Sunnyglade and the Bristle Hills. Quests you cannot take yet are skipped automatically.
 step
     .zone 2548 >>Travel to Riverglades. From the Badlands, ride the road south into the zone. If you already know the Rog'mar flight path, fly there from Kargath instead.
@@ -721,7 +721,7 @@ step
 RXPGuides.RegisterGuide([=[
 #forever
 << Horde
-#group CMOS Riverglades Horde (Experimental)
+#group Riverglades Horde (Beta)
 #subgroup Riverglades 36-46
 #name RG - 02 Sunnyglade and Bolder'ok
 #displayname 2. Sunnyglade and Bolder'ok (40-45)
@@ -1137,7 +1137,7 @@ step
 RXPGuides.RegisterGuide([=[
 #forever
 << Horde
-#group CMOS Riverglades Horde (Experimental)
+#group Riverglades Horde (Beta)
 #subgroup Riverglades 36-46
 #name RG - 03 Powderfuse Port
 #displayname 3. Powderfuse Port and the Coast (40-45)
@@ -1539,7 +1539,7 @@ step
 RXPGuides.RegisterGuide([=[
 #forever
 << Horde
-#group CMOS Riverglades Horde (Experimental)
+#group Riverglades Horde (Beta)
 #subgroup Riverglades 36-46
 #name RG - 04 Twilight's Shroud
 #displayname 4. Twilight's Shroud (42-46)
@@ -1753,7 +1753,7 @@ step
 RXPGuides.RegisterGuide([=[
 #forever
 << Horde
-#group CMOS Riverglades Horde (Experimental)
+#group Riverglades Horde (Beta)
 #subgroup Riverglades 36-46
 #name RG - 05 Krol'dok Stronghold
 #displayname 5. Krol'dok Stronghold (dungeon, 40-45)
