@@ -20,3 +20,4 @@ ignore:
   - stylua.toml
   - tests
   - tools
+  - assets

@@ -9,6 +9,7 @@ The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Rivergl
 - `CMOS_Riverglades.toc`: Interface 16001, `AllowLoadGameType: camelot`, `Dependencies: RXPGuides`, Version. The title says Horde and Experimental.
 - `CMOS-Riverglades.lua`: five `RXPGuides.RegisterGuide` chapters, group `CMOS Riverglades Horde (Experimental)`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 05` (chapter 5 is the optional Krol'dok Stronghold dungeon run).
 - `.github/workflows/release.yml`, `.pkgmeta`, `CI.md`: tag-driven packaging and CurseForge upload.
+- `assets/logo.png`: the CurseForge project logo (not packaged).
 - `tools/install.py`: replaces `AddOns/CMOS_Riverglades` locally with the files the packager ships; refuses an AddOns folder without RXPGuides.
 - `tests/rxp_harness.lua`: loads the installed RXP `functions.lua`, `GuideLoader.lua` and flight database with WoW API stand-ins (`RXP_GUIDES_DIR` overrides the default path).
 - `tests/riverglades.lua`: chapter links and group, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, bare `.complete` lines, arrival order, and no CMOS Dungeon Guides directives.
@@ -28,7 +29,7 @@ The repository root is the addon folder; `.pkgmeta` packages it as `CMOS_Rivergl
 - Do not use `.fp` for Forever's new flight masters. `.fp <name>` resolves the node through RXP's flight database by name, which has no Rog'mar entry, so the step never completes for a character who already knows the path. Use a `.goto` stop at the flight master instead.
 - Every turn-in is gated on the same quest being ready (`.isQuestComplete`) or, for deliveries, in the log (`.isOnQuest`).
 - Gate each follow-up pickup on the quest that unlocks it. When the unlock order is undocumented, offer the pickup at the earliest likely point with a skip note and again after the likely prerequisite.
-- Elite kills and crafting or cooking quests are `#optional`. Keep Booty Bay, Tanaris and Feralas continuations out of the route.
+- Elite kills and crafting or cooking quests are `#optional`. Keep the Booty Bay and Tanaris continuations out of the route; On the Other Side is only picked up as the hand-off to Feralas. The Krol'dok Stronghold quests are picked up at the end of chapter 4 and run in the optional chapter 5.
 - Chapter names are RXP progress keys; keep them stable and bump `#version` when a chapter changes.
 - The addon only registers guides through the public `RXPGuides.RegisterGuide`. RXP's import box is not a distribution path: it accepts only strings RestedXP encrypts per Battle.net account for paid guides.
 - Local parser tests are not an in-game verification.
