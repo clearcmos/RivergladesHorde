@@ -1,0 +1,47 @@
+# CMOS Riverglades Horde (Experimental)
+
+A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46, shown inside the RestedXP Guides addon.
+
+> **Experimental.** This guide was written from public quest data in the zone's first week, before any established guide covered it. There is no guarantee that every step, location, quest order or prerequisite is right, or that it works well at all. Skip any step that does not match the game. Horde only.
+
+## Requirements
+
+- WoW Forever.
+- **RestedXP Guides (RXPGuides)** installed and enabled. This addon only adds a guide to it and does nothing on its own.
+- A Horde character.
+
+## Install
+
+- **CurseForge app:** install CMOS Riverglades Horde (Experimental) and it updates with each release.
+- **Manually:** unzip the release into `World of Warcraft/_forever_/Interface/AddOns/` so the folder is `AddOns/CMOS_Riverglades`, then restart the game. To update, replace the folder.
+
+In RXP's guide picker, select **CMOS Riverglades Horde (Experimental)**, then **Riverglades 36-46**, and start at **1. Rog'mar and the River**.
+
+## Chapters
+
+1. **Rog'mar and the River (36-41)**: arrival from the Badlands, the Rog'mar quest givers, Turner's Logging Camp, Meadowsbrook, Sunnyglade, Gelinda Coppergleam's dragon caves and the Bristle Hills.
+2. **Sunnyglade and Bolder'ok (40-45)**: the caves under Sunnyglade with Clubtoe, Na'zok's farm, Clugfist, and the Bloodmaster's Ring.
+3. **Powderfuse Port and the Coast (40-45)**: Sleebo, Friz's smuggling chain, Wharfmaster Whizzbuzz's pirate quests, the murlocs and the sea monster.
+4. **Twilight's Shroud (42-46)**: Da'grosh, Crag'rog, Executioner Morg and Overlord Kilgar.
+
+## What the guide does and does not do
+
+- Turn-ins appear only for quests that are ready, and follow-up pickups wait for the quest that unlocks them. Objective steps show RXP's live progress counters.
+- Elite kills (Snargl, Ghostmaw, Ombassa, Scaldaron, Old Rot-Chum, Scoutmaster Vargas), Step Two: More Rock (Heavy Weightstones) and Not My Circus (Cooking 200) are optional steps.
+- Show Them How It's Done and Bristle Hills Bandits are offered at the earliest likely point with a skip note and again later, because their unlock order is not documented.
+- Arrival is a zone step with written directions (the road south from the Badlands, or the Kargath flight once Rog'mar is known), then an arrow to Rog'mar. The Rog'mar flight path step finishes when you reach the flight master, because RXP cannot yet detect that flight path.
+- Not included: Krol'dok Stronghold's dungeon quests, Friz's chains that continue to Booty Bay and Tanaris, On the Other Side (Feralas), and Armory of Sunnyglade (starts in Undercity).
+- The Jom-jom pickup, the Sweetberry and Riverweed spots and the Twilight Ritual Circles have no recorded coordinates; those steps describe the area.
+
+Data sources and the decisions behind the quest order are in [SOURCES.md](SOURCES.md). Report problems on the project's CurseForge page or GitHub issues.
+
+## Development
+
+- `bash tools/check.sh`: Lua 5.1 syntax, the guide test against an installed RXPGuides (set `RXP_GUIDES_DIR` to its folder), and the tool tests. Needs LuaJIT, the Lua 5.1 compiler and Python 3. The guide test loads RXP's own parser and directive functions with WoW API stand-ins; it checks chapter links, readiness-gated turn-ins, prerequisite links, level gates, breadcrumb turn-ins, in-zone waypoints, progress counters and the arrival order, not in-game behavior.
+- `luacheck CMOS-Riverglades.lua tests --config .luacheckrc` (lint) and `stylua --check --config-path stylua.toml CMOS-Riverglades.lua tests` (format).
+- `python3 tools/install.py <path to Interface/AddOns>`: replaces the local `CMOS_Riverglades` folder with the files the packager ships.
+- Releases: see [CI.md](CI.md).
+
+## License
+
+MIT. The guide text, tests and tools are original. World of Warcraft content belongs to Blizzard Entertainment. RestedXP Guides is a separate addon and is not included.

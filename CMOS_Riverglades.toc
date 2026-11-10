@@ -1,0 +1,9 @@
+## Interface: 16001
+## Title: CMOS Riverglades Horde (Experimental)
+## Notes: Experimental Horde questing guide for Riverglades (levels 36-46). Requires RestedXP Guides. No guarantee it works well.
+## Author: clearcmos
+## Version: 0.3.0
+## AllowLoadGameType: camelot
+## Dependencies: RXPGuides
+
+CMOS-Riverglades.lua

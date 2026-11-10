@@ -1,0 +1,9 @@
+# Local package outputs are not source files.
+.release/
+*.zip
+# Never commit private guide references or character/account exports.
+private/
+temp/
+# Installer tests may create Python bytecode.
+__pycache__/
+*.pyc

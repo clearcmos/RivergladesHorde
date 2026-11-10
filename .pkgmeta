@@ -1,0 +1,19 @@
+package-as: CMOS_Riverglades
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+ignore:
+  - README.md
+  - CHANGELOG.md
+  - CI.md
+  - CLAUDE.md
+  - SOURCES.md
+  - .github
+  - .gitignore
+  - .pkgmeta
+  - .luacheckrc
+  - stylua.toml
+  - tests
+  - tools
