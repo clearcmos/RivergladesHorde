@@ -19,9 +19,9 @@ In RXP's guide picker, select **CMOS Riverglades Horde (Experimental)**, then **
 
 ## Chapters
 
-1. **Rog'mar and the River (36-41)**: arrival from the Badlands, the Rog'mar quest givers, Turner's Logging Camp, Meadowsbrook, Sunnyglade, Gelinda Coppergleam's dragon caves and the Bristle Hills.
+1. **Rog'mar and the River (36-41)**: arrival from the Badlands, the Rog'mar quest givers, Sleebo's gas vents, Turner's Logging Camp, Meadowsbrook, Sunnyglade, Gelinda Coppergleam's dragon caves and the Bristle Hills.
 2. **Sunnyglade and Bolder'ok (40-45)**: the caves under Sunnyglade with Clubtoe, Na'zok's farm, Clugfist, and the Bloodmaster's Ring.
-3. **Powderfuse Port and the Coast (40-45)**: Sleebo, Friz's smuggling chain, Wharfmaster Whizzbuzz's pirate quests, the murlocs and the sea monster.
+3. **Powderfuse Port and the Coast (40-45)**: Friz's smuggling chain, Wharfmaster Whizzbuzz's pirate quests, the murlocs and the sea monster.
 4. **Twilight's Shroud (42-46)**: Da'grosh, Crag'rog, Executioner Morg and Overlord Kilgar.
 
 ## What the guide does and does not do

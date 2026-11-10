@@ -7,6 +7,7 @@
 - 41 kill and collect steps send the arrow around a loop: 32 outline where their mobs or objects were seen, and 9 with only one or two known spots circle them so you scout the area. Named bosses, ring fights, caves and one-spot objectives keep a single marker.
 - The guide's RXP group is now "CMOS Riverglades Horde (Experimental)"; select it again in RXP's guide picker after updating.
 - Loads only on WoW Forever (`AllowLoadGameType: camelot`).
+- Sleebo's Gaseous Gold and Rock 'em and Sock 'em moved to chapter 1: the gas vents are at the same ponds as the Glade Vipers, so they are looted during the viper hunt.
 
 ## v0.2.1
 

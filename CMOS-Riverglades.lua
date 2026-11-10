@@ -75,6 +75,11 @@ step
     .goto 2548,61.6,58.8
     .accept 96103 >>Ride south and search the Picked Carcass for the Gnawed Skull. This starts A Feast for Buzzards.
 step
+    .xp <36,1
+    .goto 2548,68.2,48.6
+    .target Sleebo Fizzlespout
+    .accept 96063 >>East of Rog'mar among the buzzards, accept Gaseous Gold from Sleebo Fizzlespout. Its gas vents are by the ponds where you hunt vipers later.
+step
     #loop
     .isOnQuest 96107
     .goto 2548,66.4,51.1,0
@@ -107,13 +112,24 @@ step
     .target Neza Bloodsnout
     .accept 96104 >>Accept Song of the Strider.
 step
-    #completewith next
+    .xp <36,1
+    .goto 2548,68.2,48.6
+    .target Sleebo Fizzlespout
+    .accept 96063 >>If you do not have Gaseous Gold yet, accept it from Sleebo Fizzlespout east of Rog'mar before the vipers. Its gas vents are by the same ponds.
+step
+    #completewith ViperDone
     .isOnQuest 96104
     >>Kill Roving Tallstriders on the plains around Rog'mar until one drops an Intact Tallstrider Beak.
     .complete 96104,1
     .mob Roving Tallstrider
 step
+    #completewith ViperDone
+    .isOnQuest 96063
+    >>Loot Marsh Gas Vials from the gas vents by the marshy ponds while you hunt vipers.
+    .complete 96063,1
+step
     #loop
+    #label ViperDone
     .isOnQuest 96108
     .goto 2548,62.9,58.5,0
     .goto 2548,66.5,58.5,40,0
@@ -127,6 +143,18 @@ step
     .mob Glade Viper
 step
     #loop
+    .isOnQuest 96063
+    .goto 2548,61.7,58.4,0
+    .goto 2548,57.3,55.9,40,0
+    .goto 2548,62.4,53.7,40,0
+    .goto 2548,64.3,53.6,40,0
+    .goto 2548,64.4,54.8,40,0
+    .goto 2548,62.9,64.6,40,0
+    .goto 2548,59.5,62.7,40,0
+    >>Finish the Marsh Gas Vials from the gas vents around the marshy ponds.
+    .complete 96063,1
+step
+    #loop
     .isOnQuest 96104
     .goto 2548,64.0,49.4,0
     .goto 2548,58.2,47.4,40,0
@@ -136,6 +164,27 @@ step
     >>Finish the Intact Tallstrider Beak.
     .complete 96104,1
     .mob Roving Tallstrider
+step
+    .isQuestComplete 96063
+    .goto 2548,68.2,48.6
+    .target Sleebo Fizzlespout
+    .turnin 96063 >>Ride east to Sleebo and turn in Gaseous Gold.
+step
+    .xp <36,1
+    .isQuestTurnedIn 96063
+    .goto 2548,68.2,48.6
+    .target Sleebo Fizzlespout
+    .accept 96067 >>Accept Rock 'em and Sock 'em.
+step
+    .isOnQuest 96067
+    .goto 2548,68.3,49.0
+    >>Fight G45-B4G beside Sleebo to stress test the engine.
+    .complete 96067,1
+step
+    .isQuestComplete 96067
+    .goto 2548,68.2,48.6
+    .target Sleebo Fizzlespout
+    .turnin 96067 >>Turn in Rock 'em and Sock 'em.
 step
     .isQuestComplete 96108
     .goto 2548,60.4,47.8
@@ -1087,44 +1136,6 @@ step
     +Work the neutral goblin port on the east coast: Friz's smuggling, the Eastsea pirates, murlocs and the sea monster.
     >>Wharfmaster Whizzbuzz gives his pirate quests two at a time, so the pirate coast north of the port is visited three times.
     >>Quests that continue to Booty Bay or Tanaris are left out; this guide stays in Riverglades.
-step
-    .xp <36,1
-    .goto 2548,68.2,48.6
-    .target Sleebo Fizzlespout
-    .accept 96063 >>East of Rog'mar, accept Gaseous Gold from Sleebo Fizzlespout.
-step
-    #loop
-    .isOnQuest 96063
-    .goto 2548,61.7,58.4,0
-    .goto 2548,57.3,55.9,40,0
-    .goto 2548,62.4,53.7,40,0
-    .goto 2548,64.3,53.6,40,0
-    .goto 2548,64.4,54.8,40,0
-    .goto 2548,62.9,64.6,40,0
-    .goto 2548,59.5,62.7,40,0
-    >>Collect Marsh Gas Vials from the gas vents around the marshy ponds south-west of Sleebo.
-    .complete 96063,1
-step
-    .isQuestComplete 96063
-    .goto 2548,68.2,48.6
-    .target Sleebo Fizzlespout
-    .turnin 96063 >>Return to Sleebo and turn in Gaseous Gold.
-step
-    .xp <36,1
-    .isQuestTurnedIn 96063
-    .goto 2548,68.2,48.6
-    .target Sleebo Fizzlespout
-    .accept 96067 >>Accept Rock 'em and Sock 'em.
-step
-    .isOnQuest 96067
-    .goto 2548,68.3,49.0
-    >>Fight G45-B4G beside Sleebo to stress test the engine.
-    .complete 96067,1
-step
-    .isQuestComplete 96067
-    .goto 2548,68.2,48.6
-    .target Sleebo Fizzlespout
-    .turnin 96067 >>Turn in Rock 'em and Sock 'em.
 step
     .isOnQuest 93976
     .goto 2548,77.0,52.8
