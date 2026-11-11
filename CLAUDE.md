@@ -1,4 +1,4 @@
-# Riverglades Horde (Beta)
+# Riverglades Horde
 
 Companion addon for RXPGuides on WoW Forever: a Horde questing route through the Riverglades zone, released on CurseForge and GitHub. Split from the CMOS Dungeon Guides pack on 2026-11-10 because it is a zone route, not a dungeon. Every public description says it is a beta with no guarantee, Horde only, and requires RestedXP Guide. The repository (`clearcmos/RivergladesHorde`, local `~/git/RivergladesHorde`) and the addon folder are both `RivergladesHorde`. Original guide content; no RXP source, paid guide exports or account state belong here.
 
@@ -6,8 +6,8 @@ Companion addon for RXPGuides on WoW Forever: a Horde questing route through the
 
 The repository root is the addon folder; `.pkgmeta` packages it as `RivergladesHorde` and ignores everything else.
 
-- `RivergladesHorde.toc`: Interface 16001, `AllowLoadGameType: camelot`, `Dependencies: RXPGuides`, Version. The title says Horde and Beta.
-- `RivergladesHorde.lua`: five `RXPGuides.RegisterGuide` chapters, group `Riverglades Horde (Beta)`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 05` (chapter 5 is the optional Krol'dok Stronghold dungeon run).
+- `RivergladesHorde.toc`: Interface 16001, `AllowLoadGameType: camelot`, `Dependencies: RXPGuides`, Version. The title says Horde; the Notes say experimental.
+- `RivergladesHorde.lua`: five `RXPGuides.RegisterGuide` chapters, group `Riverglades Horde`, subgroup `Riverglades 36-46`, names `RG - 01` to `RG - 05` (chapter 5 is the optional Krol'dok Stronghold dungeon run).
 - `.github/workflows/release.yml`, `.pkgmeta`, `CI.md`: tag-driven packaging and CurseForge upload.
 - `assets/logo.png`: the CurseForge project logo (not packaged).
 - `tools/install.py`: replaces `AddOns/RivergladesHorde` locally with the files the packager ships; refuses an AddOns folder without RXPGuides.
@@ -42,3 +42,4 @@ The repository root is the addon folder; `.pkgmeta` packages it as `RivergladesH
 - 2026-11-10: Renamed CMOS Riverglades Horde (Experimental) to Riverglades Horde (Beta) at the user's request, because the name was too long; "CMOS" meant nothing to people searching. The RXP group changed with it, so existing users pick the guide again once. The addon folder became `RivergladesHorde` too (the user's call; nobody had it from CurseForge yet), so a manual install of an earlier version leaves a `CMOS_Riverglades` folder to delete. The repository name stays. Shipped as v0.3.1 while v0.3.0 was still in review.
 - 2026-11-10: Cancelled v0.3.0, the only upload under the old name, at the user's request: its CurseForge file was deleted while still in review, and its GitHub release and tag were removed. v0.3.1 is the first public release.
 - 2026-11-10: Renamed the repository from `CmosRiverglades` to `RivergladesHorde` at the user's request, so nothing public carries the CMOS name. GitHub redirects the old URLs; the CurseForge description links to the new one.
+- 2026-11-10: Renamed Riverglades Horde (Beta) to Riverglades Horde, because CurseForge moderation put the project on "changes required": a project name may not contain a release stage. At the user's request the in-game title and the RXP group dropped (Beta) too (users pick the guide again once), and the README, TOC Notes and project summary say it is experimental because Riverglades is new content. The CurseForge slug became `riverglades-horde` if CurseForge took the change.

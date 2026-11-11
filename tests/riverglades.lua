@@ -47,7 +47,7 @@ local ns, state = H.Load("PALADIN", "Scourge", "Horde", 40)
 for index, name in ipairs(CHAPTERS) do
     local guide = chapter(ns, name)
     check(guide.next == CHAPTERS[index + 1], "Riverglades chapter link is wrong after " .. name)
-    check(guide.group == "Riverglades Horde (Beta)", "Chapter is outside the Riverglades Horde (Beta) group")
+    check(guide.group == "Riverglades Horde", "Chapter is outside the Riverglades Horde group")
     local labels = {}
     for _, step in ipairs(guide.steps) do
         if step.label then

@@ -13,14 +13,16 @@ SPEC.loader.exec_module(installer)
 
 
 class TocTests(unittest.TestCase):
-    def test_toc_targets_forever_requires_rxp_and_says_horde_and_beta(self):
+    def test_toc_targets_forever_requires_rxp_and_says_horde_and_experimental(self):
         toc = (ROOT / "RivergladesHorde.toc").read_text()
         self.assertIn("## Interface: 16001\n", toc)
         self.assertIn("## AllowLoadGameType: camelot\n", toc)
         self.assertIn("## Dependencies: RXPGuides\n", toc)
         title = re.search(r"^## Title: (.+)$", toc, re.M).group(1)
         self.assertIn("Horde", title)
-        self.assertIn("Beta", title)
+        # CurseForge moderation rejects a release stage in a project name, so it goes in the Notes.
+        self.assertNotIn("Beta", title)
+        self.assertIn("Experimental", re.search(r"^## Notes: (.+)$", toc, re.M).group(1))
         self.assertEqual(installer.addon_files(), ["RivergladesHorde.toc", "RivergladesHorde.lua", "LICENSE.md"])
 
     def test_pkgmeta_ships_only_addon_files(self):

@@ -1,8 +1,8 @@
-# Riverglades Horde (Beta)
+# Riverglades Horde
 
 A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46, shown inside the RestedXP Guides addon.
 
-> **Beta.** This guide was written from public quest data in the zone's first week, before any established guide covered it. There is no guarantee that every step, location, quest order or prerequisite is right, or that it works well at all. Skip any step that does not match the game. Horde only.
+> **Experimental.** Riverglades is new content in WoW Forever. This guide was written from public quest data in the zone's first week, before any established guide covered it. There is no guarantee that every step, location, quest order or prerequisite is right, or that it works well at all. Skip any step that does not match the game. Horde only.
 
 ## Requirements
 
@@ -12,10 +12,10 @@ A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46,
 
 ## Install
 
-- **CurseForge app:** install Riverglades Horde (Beta) and it updates with each release.
+- **CurseForge app:** install Riverglades Horde and it updates with each release.
 - **Manually:** unzip the release into `World of Warcraft/_forever_/Interface/AddOns/` so the folder is `AddOns/RivergladesHorde`, then restart the game. To update, replace the folder.
 
-In RXP's guide picker, select **Riverglades Horde (Beta)**, then **Riverglades 36-46**, and start at **1. Rog'mar and the River**.
+In RXP's guide picker, select **Riverglades Horde**, then **Riverglades 36-46**, and start at **1. Rog'mar and the River**.
 
 ## Chapters
 
