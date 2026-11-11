@@ -20,8 +20,8 @@ The packager reads `## Interface: 16001` from the TOC and uploads the file for W
 ## Release steps
 
 1. Run `bash tools/check.sh`, luacheck and stylua (README, Development).
-2. Bump `## Version` in `RivergladesHorde.toc`, bump `#version` on each changed chapter in `RivergladesHorde.lua`, and add a `CHANGELOG.md` entry.
+2. Bump `## Version` in `RivergladesHorde.toc`, bump `#version` on each changed chapter in `RivergladesHorde.lua`, and add a `CHANGELOG.md` entry. When released steps moved, the entry tells players to click their current step (`tests/test_progress.py` fails otherwise).
 3. Commit and push, then tag and push the tag: `git tag vX.Y.Z && git push origin main --tags`.
-4. Watch the run with `gh run watch`, then check the upload on CurseForge. A new file goes through review before it can be downloaded.
+4. Watch the run with `gh run watch`, then check the upload on CurseForge. A new file goes through review before it can be downloaded. Delete or archive a file in the console's Files list: the API delete answers success without deleting.
 
 To check a package without uploading, fetch the packager's `release.sh` and run `bash release.sh -d -z -t <repo> -r <outdir>` from outside the repository (`-d` skips the upload, `-z` the zip); `<outdir>/RivergladesHorde/` should hold only the three addon files.
