@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 5
+#version 6
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
@@ -258,12 +258,6 @@ step
     .target Krom'rosh
     .accept 93787 >>Accept Food for the Taking.
 step
-    #optional
-    .xp <36,1
-    .goto 2548,59.4,45.6
-    .target Krom'rosh
-    .accept 94483 >>If Krom'rosh offers Show Them How It's Done now, accept it. Otherwise skip this step; it is offered after Food for the Taking.
-step
     .isQuestComplete 93788
     .goto 2548,59.8,46.0
     .target Kreza Darkthorn
@@ -312,19 +306,15 @@ step
     .accept 93971
 step
     #loop
-    .goto 2548,48.4,67.3,0
-    .goto 2548,42.9,62.2,40,0
-    .goto 2548,48.4,63.5,40,0
-    .goto 2548,53.3,70.4,40,0
-    .goto 2548,52.1,72.0,40,0
-    .goto 2548,50.7,71.7,40,0
-    .goto 2548,44.5,65.1,40,0
-    >>South of the river, steal 6 Feed Satchels at the Meadowsbrook farm, and kill 8 Farholde Priests and 12 Farholde Scouts between the farm and the river.
+    .goto 2548,45.4,81.4,0
+    .goto 2548,48.0,81.4,40,0
+    .goto 2548,46.7,84.9,40,0
+    .goto 2548,44.1,84.9,40,0
+    .goto 2548,42.8,81.4,40,0
+    .goto 2548,44.1,77.9,40,0
+    .goto 2548,46.7,77.9,40,0
+    >>Ride back south to the Meadowsbrook farm and steal 6 Feed Satchels.
     .complete -93787,1
-    .complete -94483,1
-    .complete -94483,2
-    .mob Farholde Priest
-    .mob Farholde Scout
 step
     .isQuestComplete 95955
     .goto 2548,58.2,45.2
@@ -341,11 +331,6 @@ step
     .target Krom'rosh
     .turnin 93787 >>Turn in Food for the Taking.
 step
-    .isQuestComplete 94483
-    .goto 2548,59.4,45.6
-    .target Krom'rosh
-    .turnin 94483 >>Turn in Show Them How It's Done.
-step
     .isQuestTurnedIn 93787
     .goto 2548,59.4,45.6
     .target Krom'rosh
@@ -355,7 +340,7 @@ step
     .isQuestTurnedIn 93787
     .goto 2548,59.4,45.6
     .target Krom'rosh
-    .accept 94483 >>Accept Show Them How It's Done if you do not have it yet.
+    .accept 94483 >>Accept Show Them How It's Done.
 step
     .isOnQuest 94480
     .goto 2548,58.6,44.6
@@ -395,7 +380,7 @@ step
     .goto 2548,50.7,71.7,40,0
     .goto 2548,44.4,65.2,40,0
     .goto 2548,42.9,62.2,40,0
-    >>If Show Them How It's Done is still open, return south of the river and finish the Farholde Priests and Scouts.
+    >>Return south of the river and kill 8 Farholde Priests and 12 Farholde Scouts between Meadowsbrook and the river.
     .complete 94483,1
     .complete 94483,2
     .mob Farholde Priest

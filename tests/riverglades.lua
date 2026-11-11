@@ -99,6 +99,8 @@ check(next(H.Load("WARRIOR", "Human", "Alliance").guides) == nil, "Horde guide a
 local followups = {
     { 93787, 93786 },
     { 94480, 93787 },
+    -- Regression: step 41 offered this early with a skip note; Krom'rosh does not offer it while 93787 is open (in game 2026-11-10).
+    { 94483, 93787 },
     { 94481, 94480 },
     { 94672, 94483 },
     { 93976, 93788 },

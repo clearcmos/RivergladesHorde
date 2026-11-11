@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Show Them How It's Done is offered only after Food for the Taking, which is when Krom'rosh gives it, so the early "skip this if not offered" step is gone.
 - Renamed to Riverglades Horde, since CurseForge does not allow a release stage in a project name. It is still experimental. RXP lists the guide under the new name, so pick it again once.
 - Quest items you use (Wood Bundle, Makeshift Stickin' Spear, Remote Explosive Charge) get RXP's clickable item button on their steps.
 - If a Farholde Scouting Report drops, a step offers to start it and the next Krom'rosh visit turns it in.
