@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 8
+#version 9
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
@@ -399,7 +399,7 @@ step
     .accept 94680 >>Accept Twilight Missives.
 step
     .xp <36,1
-    .goto 2548,44.4,47.3
+    .goto 2548,47.4,51.4
     .target Fuzzle
     .accept 94961 >>West across the river in Sunnyglade, accept Biting the Hand from Fuzzle.
 step
@@ -423,12 +423,12 @@ step
     .mob Twilight Shadowmancer
 step
     .isQuestComplete 94961
-    .goto 2548,44.4,47.3
+    .goto 2548,47.4,51.4
     .target Fuzzle
     .turnin 94961 >>Turn in Biting the Hand to Fuzzle.
 step
     .isQuestTurnedIn 94961
-    .goto 2548,44.4,47.3
+    .goto 2548,47.4,51.4
     .target Fuzzle
     .accept 94963 >>Accept the second Biting the Hand.
 step
