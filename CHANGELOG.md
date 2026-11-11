@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- The Farholde Scouting Report reminder shows only while you fight Farholde's soldiers, not across the whole first chapter. Steps 46 to 56 of chapter 1 moved: if you were on one of them, click your current step in RXP's step list.
+
 ## v0.3.2
 
 - Bristle Hills Bandits is offered at the second Kreza visit only; she does not have it at the first.

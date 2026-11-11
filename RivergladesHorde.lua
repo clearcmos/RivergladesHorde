@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 7
+#version 8
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
@@ -292,14 +292,6 @@ step
     .use 271639
     .mob Freshwater Crocolisk
 step
-    #optional
-    #completewith SunnygladeDone
-    .isQuestAvailable 93971
-    >>If a Farholde Scouting Report drops while you fight Farholde's soldiers, click it to start Farholde Scouting Report. Krom'rosh takes it in Rog'mar.
-    .collect 263930,1,93971
-    .use 263930
-    .accept 93971
-step
     #loop
     .goto 2548,45.4,81.4,0
     .goto 2548,48.0,81.4,40,0
@@ -364,6 +356,14 @@ step
     .goto 2548,58.6,44.6
     .target Gorg
     .turnin 94481 >>Turn in A Serving of Strength.
+step
+    #optional
+    #completewith next
+    .isQuestAvailable 93971
+    >>If a Farholde Scouting Report drops while you fight Farholde's soldiers, click it to start Farholde Scouting Report. Krom'rosh takes it in Rog'mar.
+    .collect 263930,1,93971
+    .use 263930
+    .accept 93971
 step
     #loop
     .isOnQuest 94483
