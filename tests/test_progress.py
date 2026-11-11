@@ -6,7 +6,7 @@ on 2026-11-10 two steps removed above the player's position moved them past the 
 
 A patch keeps every released step on its line: edit steps in place, turn a removed step into one that always
 skips with the same number of lines, and add steps only at the end of a chapter. When a patch has to move
-steps, the CHANGELOG's Unreleased section says so with NOTE."""
+steps, a CHANGELOG entry newer than the last release says so with NOTE."""
 
 import re
 import subprocess
@@ -77,9 +77,10 @@ class ProgressTests(unittest.TestCase):
             self.skipTest("no release tag in this checkout")
         moved = moved_steps(old, (ROOT / GUIDE).read_text())
         if moved:
+            # Everything above the release's own heading: Unreleased, or the version about to be tagged.
             changelog = (ROOT / "CHANGELOG.md").read_text()
-            unreleased = changelog.split("## Unreleased", 1)[1].split("\n## ", 1)[0] if "## Unreleased" in changelog else ""
-            self.assertIn(NOTE, unreleased.lower(),
+            since = changelog.split(f"\n## {tag}\n", 1)[0]
+            self.assertIn(NOTE, since.lower(),
                           f"Steps moved since {tag}; keep them on their lines or tell players in CHANGELOG.md "
                           f"to {NOTE}:\n" + "\n".join(moved))
 

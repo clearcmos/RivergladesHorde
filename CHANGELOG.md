@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v0.3.2
 
 - Bristle Hills Bandits is offered at the second Kreza visit only; she does not have it at the first.
 - Show Them How It's Done is offered only after Food for the Taking, which is when Krom'rosh gives it, so the early "skip this if not offered" step is gone.
