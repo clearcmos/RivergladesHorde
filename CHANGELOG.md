@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v0.3.3
 
 - Fuzzle's arrow points to where he stands in Sunnyglade (47.4, 51.4).
 - The Farholde Scouting Report reminder shows only while you fight Farholde's soldiers, not across the whole first chapter. Steps 46 to 56 of chapter 1 moved: if you were on one of them, click your current step in RXP's step list.
