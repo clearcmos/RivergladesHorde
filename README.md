@@ -17,6 +17,16 @@ A Horde questing guide for the Riverglades zone in WoW Forever, levels 36 to 46,
 
 In RXP's guide picker, select **Riverglades Horde**, then **Riverglades 36-46**, and start at **1. Rog'mar and the River**.
 
+## Recommended: show quest objectives on the map
+
+Questie had none of Riverglades' quests when this guide was written, so the game's own shaded objective areas are the best map hint for where each quest's mobs and items are. To turn them on:
+
+1. Open the world map (M by default).
+2. Click the filter dropdown at the top of the map. Its menu starts with **Show:**.
+3. Tick **Quest Objectives**.
+
+The same setting is **Show Quest POIs & Blobs** on the **Preset** page of the game's Options. Areas appear only for quests in your quest log, on both the world map and the minimap.
+
 ## Chapters
 
 1. **Rog'mar and the River (36-41)**: arrival from the Badlands, the Rog'mar quest givers, Sleebo's gas vents, Turner's Logging Camp, Meadowsbrook, Sunnyglade, Gelinda Coppergleam's dragon caves and the Bristle Hills.
@@ -30,7 +40,8 @@ In RXP's guide picker, select **Riverglades Horde**, then **Riverglades 36-46**,
 - Turn-ins appear only for quests that are ready, and follow-up pickups wait for the quest that unlocks them. Objective steps show RXP's live progress counters.
 - Each hunting area is one step listing every objective there, so nothing appears twice in RXP's step list. Objectives for quests you do not have are skipped.
 - Quest items you use (Wood Bundle, Makeshift Stickin' Spear, Hearty Stew, Swineherd's Staff, Remote Explosive Charge, Tallstrider Call, Big Ball o' Bait) and items that start quests (Head of Scaldaron, the Krol'dok Moulding, the Farholde Scouting Report) get RXP's clickable item button.
-- Kill and collect steps use RXP's loop waypoints, so the arrow cycles around the area instead of stopping at one point: most outline where their mobs or objects were seen, and steps with only one or two known spots circle them. The arrow points in a straight line and does not route around terrain. The areas come from early player traces and are approximate. Named bosses, ring fights, caves and one-spot objectives show a single marker.
+- Kill and collect steps use RXP's loop waypoints, so the arrow cycles around the area instead of stopping at one point: most outline where their mobs or objects were seen, and steps with only one or two known spots circle them. The areas come from early player traces and are approximate. Named bosses, ring fights, caves and one-spot objectives show a single marker.
+- The arrow points in a straight line to the next waypoint and does not route around hills, cliffs or water. WoW gives addons the player's map position and facing but no terrain height or walkable ground, so no addon arrow can plan a path around obstacles. Where the straight line is blocked, follow the road or check the map; if a route needs a waypoint at a bridge or ramp, report the step number and the coordinates of the way through.
 - Elite kills (Snargl, Ghostmaw, Ombassa, Scaldaron, Old Rot-Chum, Scoutmaster Vargas), Step Two: More Rock (Heavy Weightstones) and Not My Circus (Cooking 200) are optional steps.
 - Show Them How It's Done is offered after Food for the Taking, when Krom'rosh gives it (checked in game). Bristle Hills Bandits has no documented prerequisite and is offered at the second Kreza visit, after its likely unlocks.
 - The Farholde Scouting Report starts from a drop with no published drop rate, so the guide reminds you to loot it only while you fight Farholde's soldiers, and turns it in if you have it.
