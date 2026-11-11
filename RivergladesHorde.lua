@@ -560,7 +560,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 02 Sunnyglade and Bolder'ok
 #displayname 2. Sunnyglade and Bolder'ok (40-45)
-#version 4
+#version 5
 #next RG - 03 Powderfuse Port
 
 step
@@ -721,13 +721,9 @@ step
     .complete 95425,1
     .mob Klunk
 step
-    #loop
     #optional
     .isOnQuest 95882
-    .goto 2548,75.1,34.0,0
-    .goto 2548,75.0,30.1,40,0
-    .goto 2548,75.6,35.5,40,0
-    .goto 2548,75.1,37.8,40,0
+    .goto 2548,75.1,34.0
     >>Optional elite: Scoutmaster Vargas stands just south of here, west of Windstead. Kill him and take the Scoutmaster's Eye.
     .complete 95882,1
     .mob Scoutmaster Vargas
@@ -933,7 +929,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 03 Powderfuse Port
 #displayname 3. Powderfuse Port and the Coast (40-45)
-#version 4
+#version 5
 #next RG - 04 Twilight's Shroud
 
 step
@@ -981,15 +977,8 @@ step
     .goto 2548,78.5,53.9
     .accept 95120 >>Optional elite: take WANTED: Old Rot-Chum from the board.
 step
-    #loop
     .isOnQuest 95254
-    .goto 2548,80.0,53.5,0
-    .goto 2548,82.6,53.5,40,0
-    .goto 2548,81.3,57.0,40,0
-    .goto 2548,78.6,57.0,40,0
-    .goto 2548,77.3,53.5,40,0
-    .goto 2548,78.6,50.0,40,0
-    .goto 2548,81.3,50.0,40,0
+    .goto 2548,79.4,53.5
     >>Kill Trapclaw at the water's edge by the port and take Trapclaw's Pincer.
     .complete 95254,1
     .mob Trapclaw
@@ -1022,15 +1011,10 @@ step
     .mob Sand Crawler
     .mob Shore Crawler
 step
-    #loop
     #optional
     .isOnQuest 95120
-    .goto 2548,77.1,73.3,0
-    .goto 2548,74.2,72.3,40,0
-    .goto 2548,77.9,68.7,40,0
-    .goto 2548,79.0,73.7,40,0
-    .goto 2548,77.2,79.5,40,0
-    >>Optional elite: kill Old Rot-Chum, a level 42 elite on the murloc islands, and take the Rot-Covered Harpoon.
+    .goto 2548,77.4,72.2
+    >>Optional elite: kill Old Rot-Chum, a level 42 elite on the murloc islands, and take the Rot-Covered Harpoon. He may move between the islands; RXP alerts you when he is close.
     .complete 95120,1
     .unitscan Old Rot-Chum
 step
@@ -1134,13 +1118,9 @@ step
     >>North-west of Windstead, gather 8 Rotflesh Mushrooms in the Twilight Hollow cave.
     .complete 95261,2
 step
-    #loop
     #optional
     .isOnQuest 95882
-    .goto 2548,75.1,34.0,0
-    .goto 2548,75.0,30.1,40,0
-    .goto 2548,75.6,35.5,40,0
-    .goto 2548,75.1,37.8,40,0
+    .goto 2548,75.1,34.0
     >>Optional elite: kill Scoutmaster Vargas just west of Windstead and take the Scoutmaster's Eye.
     .complete 95882,1
     .mob Scoutmaster Vargas

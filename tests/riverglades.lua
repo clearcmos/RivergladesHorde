@@ -278,6 +278,30 @@ do
     )
 end
 
+-- Regression: Old Rot-Chum's step looped the arrow around the islands while Blizzard's marker showed his spot.
+-- Named mobs in fixed spots get one marker, not a loop.
+local NAMED = {
+    ["Old Rot-Chum"] = true,
+    ["Trapclaw"] = true,
+    ["Scoutmaster Vargas"] = true,
+    ["Snargl"] = true,
+    ["Ombassa"] = true,
+    ["Klunk"] = true,
+    ["Executioner Morg"] = true,
+    ["Overlord Kilgar"] = true,
+    ["Admiral Lamora"] = true,
+    ["Monstrous Threshadon"] = true,
+}
+for _, name in ipairs(CHAPTERS) do
+    for index, step in ipairs(chapter(ns, name).steps) do
+        for _, element in ipairs(step.elements) do
+            for _, target in ipairs(element.mobs or element.unitscan or {}) do
+                check(not (step.loop and NAMED[target]), name .. " step " .. index .. " loops around " .. target)
+            end
+        end
+    end
+end
+
 -- Items you can buy ahead for optional turn-ins: one #ah step (RXP hides it in self-found mode) before the arrival.
 do
     local buy, arrival
