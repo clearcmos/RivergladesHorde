@@ -278,6 +278,25 @@ do
     )
 end
 
+-- Items you can buy ahead for optional turn-ins: one #ah step (RXP hides it in self-found mode) before the arrival.
+do
+    local buy, arrival
+    for index, step in ipairs(chapter(ns, CHAPTERS[1]).steps) do
+        local items = {}
+        for _, element in ipairs(step.elements) do
+            if element.tag == "collect" then
+                items[element.id] = element.qty
+            elseif element.tag == "zone" and element.map == 2548 then
+                arrival = arrival or index
+            end
+        end
+        if step.ah and items[3241] == 10 and items[274971] == 10 then
+            buy = index
+        end
+    end
+    check(buy and arrival and buy < arrival, "Auction house step missing or after the arrival")
+end
+
 -- Arrival: the zone-entry step comes before the flight path and the first quest.
 ns = H.Load("PALADIN", "Scourge", "Horde", 40)
 local first = chapter(ns, CHAPTERS[1])

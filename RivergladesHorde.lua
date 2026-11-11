@@ -11,13 +11,20 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 10
+#version 11
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
     +Riverglades is the new zone south of the Badlands. Rog'mar, in the middle of the zone, is the Horde hub.
     >>Experimental guide: Riverglades is new content, so this was written from public quest data in the zone's first week, with no guarantee that every step, location or quest order is right. Skip any step that does not match the game.
     >>This chapter works the Rog'mar quests around the river, Turner's Logging Camp, Meadowsbrook, Sunnyglade and the Bristle Hills. Quests you cannot take yet are skipped automatically.
+step
+    #ah
+    >>Optional, before you head to Riverglades: if you are near an auction house, buy the items for two optional turn-ins later. Skip this step if you do not want them.
+    >>10 Heavy Weightstones for Step Two: More Rock in Bolder'ok (chapter 2).
+    >>10 Briny Seafood Stew for Not My Circus in Powderfuse Port (chapter 3), unless you will cook them yourself with Cooking 200.
+    .collect 3241,10,96026,1
+    .collect 274971,10,95982,1
 step
     .zone 2548 >>Travel to Riverglades. From the Badlands, ride the road south into the zone. If you already know the Rog'mar flight path, fly there from Kargath instead.
 step
@@ -1047,7 +1054,7 @@ step
     .isQuestTurnedIn 95121
     .goto 2548,76.0,52.6
     .target Jasper Geartoggle
-    .accept 95982 >>Optional: accept Not My Circus from Jasper Geartoggle. It needs 10 Briny Seafood Stew, which needs Cooking 200. Skip it if you will not cook them.
+    .accept 95982 >>Optional: accept Not My Circus from Jasper Geartoggle. It needs 10 Briny Seafood Stew: cook them (Cooking 200) or buy them at the auction house. Skip it otherwise.
 step
     #optional
     .isQuestComplete 95982

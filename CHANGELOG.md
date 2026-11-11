@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- An optional auction house step at the start of chapter 1 lists the items you can buy ahead for Step Two: More Rock (10 Heavy Weightstones) and Not My Circus (10 Briny Seafood Stew). RXP hides it in solo self-found mode. Every later step of chapter 1 moved by one: if you are in chapter 1, click your current step in RXP's step list.
 - Step Two: More Rock, Not My Circus and Hail the Dragonslayer show their turn-in only once you have the items, instead of as soon as you take the quest.
 ## v0.3.3
 
