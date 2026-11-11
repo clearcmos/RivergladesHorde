@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 6
+#version 7
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
@@ -40,11 +40,6 @@ step
     .goto 2548,59.8,46.0
     .target Kreza Darkthorn
     .accept 93788 >>Accept Borrowed Blades from Kreza Darkthorn.
-step
-    .xp <36,1
-    .goto 2548,59.8,46.0
-    .target Kreza Darkthorn
-    .accept 94535 >>Accept Bristle Hills Bandits. If Kreza does not offer it yet, skip this step; it is checked again later.
 step
     .xp <36,1
     .goto 2548,60.4,47.8
@@ -271,7 +266,7 @@ step
     .xp <36,1
     .goto 2548,59.8,46.0
     .target Kreza Darkthorn
-    .accept 94535 >>Accept Bristle Hills Bandits if you do not have it yet.
+    .accept 94535 >>Accept Bristle Hills Bandits.
 step
     .isQuestComplete 95951
     .goto 2548,58.2,45.2

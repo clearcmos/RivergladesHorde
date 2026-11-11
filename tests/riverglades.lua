@@ -243,6 +243,29 @@ for _, name in ipairs(CHAPTERS) do
     end
 end
 
+-- Regression: Kreza did not offer Bristle Hills Bandits at the first visit (in game 2026-11-10); the only
+-- pickup comes after Borrowed Blades and A Hunter's Quiver, its likely unlocks.
+do
+    local first = chapter(ns, CHAPTERS[1]).steps
+    local pickup, blades, quiver
+    for index, step in ipairs(first) do
+        for _, element in ipairs(step.elements) do
+            if element.tag == "accept" and element.questId == 94535 then
+                check(not pickup, "Bristle Hills Bandits is offered twice")
+                pickup = index
+            elseif element.tag == "turnin" and element.questId == 93788 then
+                blades = index
+            elseif element.tag == "turnin" and element.questId == 96109 then
+                quiver = index
+            end
+        end
+    end
+    check(
+        pickup and blades and quiver and pickup > blades and pickup > quiver,
+        "Bristle Hills Bandits offered too early"
+    )
+end
+
 -- Arrival: the zone-entry step comes before the flight path and the first quest.
 ns = H.Load("PALADIN", "Scourge", "Horde", 40)
 local first = chapter(ns, CHAPTERS[1])
