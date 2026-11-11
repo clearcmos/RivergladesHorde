@@ -186,6 +186,32 @@ for _, id in ipairs({ 95141, 95143 }) do
     state.log[id] = nil
 end
 
+-- Quest items you click get RXP's item button on every step that works the objective.
+local USE_ITEMS = {
+    [95951] = 271629, -- Wood Bundle
+    [95955] = 271639, -- Makeshift Stickin' Spear
+    [95165] = 268505, -- Remote Explosive Charge
+    [94481] = 265066, -- Hearty Stew
+    [95163] = 268521, -- Swineherd's Staff
+    [96105] = 271779, -- Tallstrider Call
+    [95267] = 268647, -- Big Ball o' Bait
+}
+ns = H.Load("PALADIN", "Scourge", "Horde", 40)
+for _, name in ipairs(CHAPTERS) do
+    for _, step in ipairs(chapter(ns, name).steps) do
+        for _, element in ipairs(step.elements) do
+            local item = element.tag == "complete" and not step.completewith and USE_ITEMS[element.questId]
+            if item then
+                local button = false
+                for _, other in ipairs(step.elements) do
+                    button = button or (other.tag == "use" and other.activeItems[item] ~= nil)
+                end
+                check(button, "No item button for quest " .. element.questId)
+            end
+        end
+    end
+end
+
 -- Arrival: the zone-entry step comes before the flight path and the first quest.
 ns = H.Load("PALADIN", "Scourge", "Horde", 40)
 local first = chapter(ns, CHAPTERS[1])

@@ -272,8 +272,10 @@ step
     .goto 2548,39.0,60.0,40,0
     .goto 2548,40.3,56.5,40,0
     .goto 2548,42.9,56.5,40,0
-    >>Collect Wood Bundles from the Peasant Woodpiles around Turner's Logging Camp, then fletch them into 20 Makeshift Stickin' Spears.
+    >>Collect Wood Bundles from the Peasant Woodpiles around Turner's Logging Camp, then click the Wood Bundle to fletch them into 20 Makeshift Stickin' Spears.
     .complete 95951,1
+    .use 271629
+    .use 271877
 step
     #loop
     .isOnQuest 93788
@@ -350,9 +352,18 @@ step
     .goto 2548,55.9,53.3,40,0
     .goto 2548,47.5,58.2,40,0
     .goto 2548,42.2,57.2,40,0
-    >>Impale 10 Freshwater Crocolisks along the river between Rog'mar and Sunnyglade.
+    >>Use the Makeshift Stickin' Spear to impale 10 Freshwater Crocolisks along the river between Rog'mar and Sunnyglade.
     .complete 95955,1
+    .use 271639
     .mob Freshwater Crocolisk
+step
+    #optional
+    #completewith SunnygladeDone
+    .isQuestAvailable 93971
+    >>If a Farholde Scouting Report drops while you fight Farholde's soldiers, click it to start Farholde Scouting Report. Krom'rosh takes it in Rog'mar.
+    .collect 263930,1,93971
+    .use 263930
+    .accept 93971
 step
     #completewith next
     .isOnQuest 94483
@@ -469,6 +480,11 @@ step
     .goto 2548,59.4,45.6
     .target Krom'rosh
     .turnin 94483 >>Turn in Show Them How It's Done. Tran'gul's quests open after this.
+step
+    .isOnQuest 93971
+    .goto 2548,59.4,45.6
+    .target Krom'rosh
+    .turnin 93971 >>If you have the Farholde Scouting Report, turn it in to Krom'rosh now.
 step
     .xp <36,1
     .isQuestTurnedIn 94483
@@ -1461,8 +1477,9 @@ step
 step
     .isOnQuest 95165
     .goto 2548,88.2,26.0
-    >>Ride to the northern pirate ships. Plant a charge on the first Eastsea ship.
+    >>Ride to the northern pirate ships. Use a Remote Explosive Charge on the first Eastsea ship.
     .complete 95165,1
+    .use 268505
 step
     .isOnQuest 95124
     .goto 2548,90.5,29.5
@@ -1477,13 +1494,15 @@ step
 step
     .isOnQuest 95165
     .goto 2548,90.5,30.0
-    >>Plant a charge on the second ship.
+    >>Use a Remote Explosive Charge on the second ship.
     .complete 95165,2
+    .use 268505
 step
     .isOnQuest 95165
     .goto 2548,90.9,39.5
-    >>Plant a charge on the third ship, Captain Bentcoin's.
+    >>Use a Remote Explosive Charge on the third ship, Captain Bentcoin's.
     .complete 95165,3
+    .use 268505
 step
     .isOnQuest 95293
     .goto 2548,91.2,39.7
