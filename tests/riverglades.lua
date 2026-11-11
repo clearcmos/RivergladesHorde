@@ -19,6 +19,12 @@ local function chapter(ns, name)
     end
     error("Missing Riverglades chapter: " .. name)
 end
+-- Quests turned in with items in the bags: the turn-in must wait until the quest is ready, not just in the log.
+local ITEM_TURNINS = {
+    [96026] = true, -- Step Two: More Rock, 10 Heavy Weightstones
+    [95982] = true, -- Not My Circus, 10 Briny Seafood Stew
+    [95936] = true, -- Hail the Dragonslayer, Head of Scaldaron
+}
 local function gate(step, tag, id)
     for _, element in ipairs(step.elements) do
         if element.tag == tag then
@@ -82,6 +88,12 @@ for index, name in ipairs(CHAPTERS) do
                     gate(step, "isQuestComplete", id) or gate(step, "isOnQuest", id),
                     "Turn-in without a readiness gate: " .. id
                 )
+                -- Regression: Step Two: More Rock's turn-in showed on accepting it, before any Heavy Weightstones.
+                if ITEM_TURNINS[id] then
+                    check(gate(step, "isQuestComplete", id), "Item turn-in shown before the items: " .. id)
+                    state.log[id], state.ready[id], state.done[id] = true, nil, nil
+                    check(not H.Allowed(ns, step), "Item turn-in shown without the items: " .. id)
+                end
                 state.log[id], state.ready[id], state.done[id] = nil, nil, nil
                 check(not H.Allowed(ns, step), "Turn-in shown for a quest not in the log: " .. id)
                 state.log[id], state.ready[id] = true, true

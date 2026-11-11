@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+
+- Step Two: More Rock, Not My Circus and Hail the Dragonslayer show their turn-in only once you have the items, instead of as soon as you take the quest.
 ## v0.3.3
 
 - Fuzzle's arrow points to where he stands in Sunnyglade (47.4, 51.4).

@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 9
+#version 10
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
@@ -538,7 +538,7 @@ step
     .target Kreza Darkthorn
     .turnin 94535 >>Turn in Bristle Hills Bandits.
 step
-    .isOnQuest 95936
+    .isQuestComplete 95936
     .goto 2548,59.4,45.6
     .target Krom'rosh
     .turnin 95936 >>Turn in Hail the Dragonslayer.
@@ -553,7 +553,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 02 Sunnyglade and Bolder'ok
 #displayname 2. Sunnyglade and Bolder'ok (40-45)
-#version 3
+#version 4
 #next RG - 03 Powderfuse Port
 
 step
@@ -771,10 +771,10 @@ step
     .accept 96026 >>Optional: accept Step Two: More Rock. It needs 10 Heavy Weightstones, crafted by blacksmiths or bought at the auction house. Skip it otherwise.
 step
     #optional
-    .isOnQuest 96026
+    .isQuestComplete 96026
     .goto 2548,67.2,21.6
     .target Hamur
-    .turnin 96026 >>Turn in Step Two: More Rock once you have the 10 Heavy Weightstones. Skip this step if you are not doing it now.
+    .turnin 96026 >>Give Hamur the 10 Heavy Weightstones and turn in Step Two: More Rock.
 step
     .isOnQuest 94668
     .goto 2548,65.6,21.2
@@ -926,7 +926,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 03 Powderfuse Port
 #displayname 3. Powderfuse Port and the Coast (40-45)
-#version 3
+#version 4
 #next RG - 04 Twilight's Shroud
 
 step
@@ -1050,10 +1050,10 @@ step
     .accept 95982 >>Optional: accept Not My Circus from Jasper Geartoggle. It needs 10 Briny Seafood Stew, which needs Cooking 200. Skip it if you will not cook them.
 step
     #optional
-    .isOnQuest 95982
+    .isQuestComplete 95982
     .goto 2548,76.0,52.6
     .target Jasper Geartoggle
-    .turnin 95982 >>Turn in Not My Circus once you have cooked the 10 Briny Seafood Stew. Skip this step if you are not doing it now.
+    .turnin 95982 >>Turn in Not My Circus with the 10 Briny Seafood Stew.
 step
     .isOnQuest 95260
     .goto 2548,79.8,52.4
