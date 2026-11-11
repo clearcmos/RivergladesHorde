@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v0.3.5
 
 - Old Rot-Chum, Trapclaw and Scoutmaster Vargas get one marker at their spot instead of a loop around the area. Old Rot-Chum's marker is Wowhead's spot for him (77.4, 72.2). Steps in chapter 3 shifted: if you are in chapter 3, click your current step in RXP's step list.
 

@@ -2,7 +2,7 @@
 ## Title: Riverglades Horde
 ## Notes: Experimental Horde questing guide for the new Riverglades zone (levels 36-46). Requires RestedXP Guide. No guarantee it works well.
 ## Author: clearcmos
-## Version: 0.3.4
+## Version: 0.3.5
 ## AllowLoadGameType: camelot
 ## Dependencies: RXPGuides
 
