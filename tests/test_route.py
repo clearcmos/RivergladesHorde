@@ -28,7 +28,7 @@ def steps():
         for body in re.split(r"(?m)^(?=step)", chapter)[1:]:
             out.append({
                 "points": [(float(x), float(y)) for x, y in re.findall(r"\.goto 2548,([\d.]+),([\d.]+)", body)],
-                "complete": sorted(set(re.findall(r"\.complete (\d+),", body))),
+                "complete": sorted(set(re.findall(r"\.complete -?(\d+),", body))),
                 "accept": re.findall(r"\.accept (\d+)", body),
                 "gated": ".isQuestTurnedIn" in body,
                 "sticky": "#completewith" in body,

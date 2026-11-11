@@ -212,6 +212,35 @@ for _, name in ipairs(CHAPTERS) do
     end
 end
 
+-- Regression: a "while you're here" sticky plus a "finish" step listed the same objective twice in
+-- RXP's step list, and the copy that was not active kept a stale counter after the quest was done.
+for _, name in ipairs(CHAPTERS) do
+    local steps = chapter(ns, name).steps
+    for i, step in ipairs(steps) do
+        if step.completewith then
+            for _, element in ipairs(step.elements) do
+                if element.tag == "complete" then
+                    for j, other in ipairs(steps) do
+                        for _, o in ipairs(j ~= i and other.elements or {}) do
+                            check(
+                                not (o.tag == "complete" and o.questId == element.questId and o.obj == element.obj),
+                                string.format(
+                                    "%s step %d repeats objective %d,%d of sticky step %d",
+                                    name,
+                                    j,
+                                    element.questId,
+                                    element.obj,
+                                    i
+                                )
+                            )
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
 -- Arrival: the zone-entry step comes before the flight path and the first quest.
 ns = H.Load("PALADIN", "Scourge", "Horde", 40)
 local first = chapter(ns, CHAPTERS[1])
