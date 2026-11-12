@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.3.6
+
+- Hunting loops lead through the mobs instead of around the edge of their area. Each waypoint now counts as reached within 25 yards instead of 40, and no gap between two waypoints is longer than 300 yards. The loops come from QuestieDB's latest spawn data.
+- Chapter 3 picks up It Takes Guts first: ride past the port to the Painted Hide, then Argo gives the quest during the port pickups. Every beast drops Beast Entrails, so Trapclaw and the coast crawlers count toward the 15, and the entrails loop near the port only finishes what is left.
+- G45-B4G, the six Bloodmaster's Ring opponents and the Rog'mar Trainees get RXP's target button.
+- Steps in chapters 1, 2 and 3 moved: if you are in one of them, click your current step in RXP's step list.
+
 ## v0.3.5
 
 - Old Rot-Chum, Trapclaw and Scoutmaster Vargas get one marker at their spot instead of a loop around the area. Old Rot-Chum's marker is Wowhead's spot for him (77.4, 72.2). Steps in chapter 3 shifted: if you are in chapter 3, click your current step in RXP's step list.

@@ -14,7 +14,13 @@ AWAY = 600  # a step this far from the earlier area means the player has left it
 GIVER = 200  # a giver this close to a step the route already took counts as passed
 
 # Reviewed exceptions: (quest, earlier quest) -> why the objective cannot be done on the earlier visit.
-REVIEWED = {}
+REVIEWED = {
+    ("95261", "95118"): "Beast Entrails drop from every beast, and the murloc step tells players to loot the crawlers "
+                        "for them; listing the 15 entrails there would hold that step open, so the later loop only "
+                        "finishes the count.",
+    ("95261", "95254"): "Trapclaw drops Beast Entrails and the It Takes Guts pickup says so; the later loop only "
+                        "finishes the count.",
+}
 
 
 def yards(a, b):

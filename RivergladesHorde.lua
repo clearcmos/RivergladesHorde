@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 01 Rog'mar and the River
 #displayname 1. Rog'mar and the River (36-41)
-#version 11
+#version 12
 #next RG - 02 Sunnyglade and Bolder'ok
 
 step
@@ -91,12 +91,12 @@ step
 step
     #loop
     .isOnQuest 96107
-    .goto 2548,66.4,51.1,0
-    .goto 2548,60.8,59.9,40,0
-    .goto 2548,60.2,50.3,40,0
-    .goto 2548,64.5,46.4,40,0
-    .goto 2548,71.9,49.1,40,0
-    .goto 2548,72.5,49.5,40,0
+    .goto 2548,65.6,53.4,0
+    .goto 2548,66.0,46.9,25,0
+    .goto 2548,64.1,51.5,25,0
+    .goto 2548,61.1,56.9,25,0
+    .goto 2548,66.7,58.3,25,0
+    .goto 2548,69.2,53.2,25,0
     >>Kill Low Plains Buzzards on the plains east of Rog'mar for 6 Plains Buzzard Feathers.
     .complete 96107,1
     .mob Low Plains Buzzard
@@ -127,11 +127,14 @@ step
     .accept 96063 >>If you do not have Gaseous Gold yet, accept it from Sleebo Fizzlespout east of Rog'mar before the vipers. Its gas vents are by the same ponds.
 step
     #loop
-    .goto 2548,61.9,57.5,0
-    .goto 2548,53.1,58.1,40,0
-    .goto 2548,61.8,47.1,40,0
-    .goto 2548,70.5,55.0,40,0
-    .goto 2548,62.8,64.6,40,0
+    .goto 2548,62.7,57.5,0
+    .goto 2548,66.2,53.1,25,0
+    .goto 2548,68.0,58.3,25,0
+    .goto 2548,64.3,61.7,25,0
+    .goto 2548,59.6,60.8,25,0
+    .goto 2548,55.4,58.0,25,0
+    .goto 2548,61.0,56.4,25,0
+    .goto 2548,62.4,51.5,25,0
     >>Around the marshy ponds south-east of Rog'mar, kill Glade Vipers for their venom and loot Marsh Gas Vials from the gas vents. Kill Roving Tallstriders on the way until one drops the beak.
     .complete -96108,1
     .complete -96063,1
@@ -154,6 +157,7 @@ step
     .goto 2548,68.3,49.0
     >>Fight G45-B4G beside Sleebo to stress test the engine.
     .complete 96067,1
+    .mob G45-B4G
 step
     .isQuestComplete 96067
     .goto 2548,68.2,48.6
@@ -183,10 +187,11 @@ step
 step
     #loop
     .isOnQuest 96109
-    .goto 2548,60.0,52.5,0
-    .goto 2548,57.7,56.7,40,0
-    .goto 2548,60.4,50.5,40,0
-    .goto 2548,62.3,48.7,40,0
+    .goto 2548,59.6,53.7,0
+    .goto 2548,59.5,50.4,25,0
+    .goto 2548,57.2,53.0,25,0
+    .goto 2548,59.1,57.0,25,0
+    .goto 2548,61.9,52.9,25,0
     >>Just south of Rog'mar, kill Wildplains Patriarchs and Huntresses for 6 Prized Lion Hides.
     .complete 96109,1
     .mob Wildplains Patriarch
@@ -224,13 +229,11 @@ step
     .accept 94533 >>Optional elite: accept Snargl's Snout. Skip this step if you will not fight a level 40 elite gnoll.
 step
     #loop
-    .goto 2548,42.0,59.6,0
-    .goto 2548,44.9,59.6,40,0
-    .goto 2548,43.4,63.6,40,0
-    .goto 2548,40.5,63.6,40,0
-    .goto 2548,39.0,59.6,40,0
-    .goto 2548,40.5,55.7,40,0
-    .goto 2548,43.4,55.7,40,0
+    .goto 2548,40.3,62.5,0
+    .goto 2548,42.4,59.7,25,0
+    .goto 2548,41.6,65.1,25,0
+    .goto 2548,38.1,64.4,25,0
+    .goto 2548,39.1,59.5,25,0
     >>At Turner's Logging Camp, collect Wood Bundles from the Peasant Woodpiles and click a Wood Bundle to fletch 20 Makeshift Stickin' Spears. Kill lumberjacks for 10 Woodworker's Axes.
     .complete -95951,1
     .complete -93788,1
@@ -241,11 +244,11 @@ step
 step
     #loop
     .isOnQuest 93786
-    .goto 2548,45.6,80.5,0
-    .goto 2548,44.4,77.6,40,0
-    .goto 2548,45.2,76.5,40,0
-    .goto 2548,47.3,84.8,40,0
-    .goto 2548,45.0,82.9,40,0
+    .goto 2548,45.9,80.6,0
+    .goto 2548,44.5,77.8,25,0
+    .goto 2548,46.4,79.1,25,0
+    .goto 2548,48.0,82.1,25,0
+    .goto 2548,44.4,81.4,25,0
     >>Ride south to the Meadowsbrook farm and kill 12 Meadowsbrook Farmhands. Watch for Farholde patrols.
     .complete 93786,1
     .mob Meadowsbrook Farmhand
@@ -287,13 +290,16 @@ step
 step
     #loop
     .isOnQuest 95955
-    .goto 2548,48.8,53.8,0
-    .goto 2548,41.8,54.8,40,0
-    .goto 2548,42.9,53.8,40,0
-    .goto 2548,57.1,47.1,40,0
-    .goto 2548,55.9,53.3,40,0
-    .goto 2548,47.5,58.2,40,0
-    .goto 2548,42.2,57.2,40,0
+    .goto 2548,48.1,53.7,0
+    .goto 2548,55.5,48.8,25,0
+    .goto 2548,49.1,48.9,25,0
+    .goto 2548,42.7,49.1,25,0
+    .goto 2548,44.1,54.2,25,0
+    .goto 2548,43.6,59.7,25,0
+    .goto 2548,46.1,58.7,25,0
+    .goto 2548,47.6,55.9,25,0
+    .goto 2548,51.7,52.0,25,0
+    .goto 2548,54.7,52.6,25,0
     >>Use the Makeshift Stickin' Spear to impale 10 Freshwater Crocolisks along the river between Rog'mar and Sunnyglade.
     .complete 95955,1
     .use 271639
@@ -301,12 +307,12 @@ step
 step
     #loop
     .goto 2548,45.4,81.4,0
-    .goto 2548,48.0,81.4,40,0
-    .goto 2548,46.7,84.9,40,0
-    .goto 2548,44.1,84.9,40,0
-    .goto 2548,42.8,81.4,40,0
-    .goto 2548,44.1,77.9,40,0
-    .goto 2548,46.7,77.9,40,0
+    .goto 2548,48.0,81.4,25,0
+    .goto 2548,46.7,84.9,25,0
+    .goto 2548,44.1,84.9,25,0
+    .goto 2548,42.8,81.4,25,0
+    .goto 2548,44.1,77.9,25,0
+    .goto 2548,46.7,77.9,25,0
     >>Ride back south to the Meadowsbrook farm and steal 6 Feed Satchels.
     .complete -93787,1
 step
@@ -348,16 +354,15 @@ step
 step
     #loop
     .isOnQuest 94481
-    .goto 2548,59.0,35.5,0
-    .goto 2548,61.6,35.5,40,0
-    .goto 2548,60.3,39.0,40,0
-    .goto 2548,57.7,39.0,40,0
-    .goto 2548,56.4,35.5,40,0
-    .goto 2548,57.7,32.0,40,0
-    .goto 2548,60.3,32.0,40,0
+    .goto 2548,59.6,37.4,0
+    .goto 2548,59.1,40.6,25,0
+    .goto 2548,62.3,37.0,25,0
+    .goto 2548,60.0,33.8,25,0
+    .goto 2548,57.1,38.1,25,0
     >>North of Rog'mar at the training grounds, use the Hearty Stew to feed 8 Rog'mar Trainees.
     .complete 94481,1
     .use 265066
+    .target Rog'mar Trainee
 step
     .isQuestComplete 94481
     .goto 2548,58.6,44.6
@@ -374,14 +379,12 @@ step
 step
     #loop
     .isOnQuest 94483
-    .goto 2548,47.9,66.7,0
-    .goto 2548,42.0,60.1,40,0
-    .goto 2548,48.8,63.6,40,0
-    .goto 2548,53.2,70.5,40,0
-    .goto 2548,52.1,72.0,40,0
-    .goto 2548,50.7,71.7,40,0
-    .goto 2548,44.4,65.2,40,0
-    .goto 2548,42.9,62.2,40,0
+    .goto 2548,48.1,67.3,0
+    .goto 2548,52.0,68.3,25,0
+    .goto 2548,50.5,70.6,25,0
+    .goto 2548,45.5,65.7,25,0
+    .goto 2548,43.5,63.7,25,0
+    .goto 2548,47.9,66.5,25,0
     >>Return south of the river and kill 8 Farholde Priests and 12 Farholde Scouts between Meadowsbrook and the river.
     .complete 94483,1
     .complete 94483,2
@@ -412,13 +415,12 @@ step
 step
     #loop
     #label SunnygladeDone
-    .goto 2548,47.5,49.9,0
-    .goto 2548,40.8,43.6,40,0
-    .goto 2548,51.3,40.0,40,0
-    .goto 2548,56.1,46.0,40,0
-    .goto 2548,53.3,55.5,40,0
-    .goto 2548,44.7,57.4,40,0
-    .goto 2548,41.6,52.8,40,0
+    .goto 2548,48.3,48.9,0
+    .goto 2548,45.6,52.7,25,0
+    .goto 2548,50.5,54.8,25,0
+    .goto 2548,52.0,45.4,25,0
+    .goto 2548,48.4,47.0,25,0
+    .goto 2548,43.3,47.6,25,0
     >>Work through Sunnyglade: kill Twilight Raiders, Neophytes and Shadowmancers, take 3 Twilight Missives from the Shadowmancers, and loot 20 Twilight Finger Bones from any of them.
     .complete -94672,1
     .complete -94672,2
@@ -471,14 +473,11 @@ step
     .accept 95934 >>Accept Proof of Profit.
 step
     #loop
-    .goto 2548,29.7,73.3,0
-    .goto 2548,28.5,71.1,40,0
-    .goto 2548,29.5,69.4,40,0
-    .goto 2548,31.7,73.2,40,0
-    .goto 2548,31.0,76.3,40,0
-    .goto 2548,30.2,77.0,40,0
-    .goto 2548,29.3,76.3,40,0
-    .goto 2548,27.9,72.2,40,0
+    .goto 2548,30.0,72.0,0
+    .goto 2548,30.2,70.0,25,0
+    .goto 2548,29.1,68.0,25,0
+    .goto 2548,29.6,74.5,25,0
+    .goto 2548,30.1,72.3,25,0
     >>In the dragon caves south of Gelinda, kill 8 Cinderscale Whelps and 4 Cinderscale Warriors, and loot the Cubic Draconia crystal.
     .complete -95792,1
     .complete -95792,2
@@ -507,13 +506,11 @@ step
     .turnin 95934 >>Turn in Proof of Profit.
 step
     #loop
-    .goto 2548,19.1,67.9,0
-    .goto 2548,15.1,68.1,40,0
-    .goto 2548,16.3,66.7,40,0
-    .goto 2548,27.5,61.5,40,0
-    .goto 2548,23.2,67.0,40,0
-    .goto 2548,16.8,73.2,40,0
-    .goto 2548,15.9,73.7,40,0
+    .goto 2548,20.2,68.3,0
+    .goto 2548,22.9,64.9,25,0
+    .goto 2548,20.7,67.4,25,0
+    .goto 2548,17.7,70.3,25,0
+    .goto 2548,20.1,71.5,25,0
     >>West of the dragon caves in the Bristle Hills, kill Redridge Mystics, Trappers and Brutes, and loot 40 Stolen Ore from them.
     .complete -94532,1
     .complete -94532,2
@@ -560,7 +557,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 02 Sunnyglade and Bolder'ok
 #displayname 2. Sunnyglade and Bolder'ok (40-45)
-#version 5
+#version 6
 #next RG - 03 Powderfuse Port
 
 step
@@ -660,11 +657,16 @@ step
     .accept 95163 >>Accept Drive Them Back.
 step
     #loop
-    .goto 2548,72.6,35.4,0
-    .goto 2548,67.8,31.9,40,0
-    .goto 2548,73.6,32.6,40,0
-    .goto 2548,77.8,40.0,40,0
-    .goto 2548,70.1,36.0,40,0
+    .goto 2548,72.3,34.5,0
+    .goto 2548,69.8,28.3,25,0
+    .goto 2548,71.6,32.7,25,0
+    .goto 2548,75.5,31.8,25,0
+    .goto 2548,79.4,30.9,25,0
+    .goto 2548,78.2,39.3,25,0
+    .goto 2548,73.3,39.6,25,0
+    .goto 2548,70.8,37.0,25,0
+    .goto 2548,67.4,36.7,25,0
+    .goto 2548,68.0,31.4,25,0
     >>South of Na'zok's farm, swat 10 Young Paletusks with the Swineherd's Staff to send them home, and kill Mature Paletusks for 10 Chunks of Boar Meat.
     .complete -95163,1
     .complete -95162,1
@@ -700,14 +702,16 @@ step
     .accept 95183 >>Accept Step One: Rock from Hamur.
 step
     #loop
-    .goto 2548,71.4,29.1,0
-    .goto 2548,63.9,24.2,40,0
-    .goto 2548,75.1,24.2,40,0
-    .goto 2548,77.5,25.7,40,0
-    .goto 2548,77.8,31.2,40,0
-    .goto 2548,73.6,36.2,40,0
-    .goto 2548,71.9,35.5,40,0
-    .goto 2548,65.6,29.0,40,0
+    .goto 2548,75.0,29.1,0
+    .goto 2548,71.0,28.0,25,0
+    .goto 2548,74.2,25.5,25,0
+    .goto 2548,75.5,27.2,25,0
+    .goto 2548,76.8,27.4,25,0
+    .goto 2548,78.1,29.4,25,0
+    .goto 2548,76.5,30.5,25,0
+    .goto 2548,74.0,32.4,25,0
+    .goto 2548,69.5,31.6,25,0
+    .goto 2548,67.8,30.6,25,0
     >>East of Bolder'ok, kill 7 Twilight Maulers and 7 Twilight Firecallers. Loot Good Rocks from the Rock Piles along the river on the way there and back.
     .complete -95424,1
     .complete -95424,2
@@ -803,6 +807,7 @@ step
     .goto 2548,65.6,21.4
     >>Step into the ring and defeat Buzzbeak.
     .complete 94670,1
+    .mob Buzzbeak
 step
     .isQuestComplete 94670
     .goto 2548,65.6,21.2
@@ -818,6 +823,7 @@ step
     .goto 2548,65.6,21.4
     >>Defeat Kronk in the ring.
     .complete 94739,1
+    .mob Kronk
 step
     .isQuestComplete 94739
     .goto 2548,65.6,21.2
@@ -833,6 +839,7 @@ step
     .goto 2548,65.6,21.4
     >>Defeat Bonegnaw in the ring.
     .complete 94962,1
+    .mob Bonegnaw
 step
     .isQuestComplete 94962
     .goto 2548,65.6,21.2
@@ -848,6 +855,7 @@ step
     .goto 2548,65.6,21.4
     >>Defeat Mog'thar in the ring.
     .complete 94964,1
+    .mob Mog'thar
 step
     .isQuestComplete 94964
     .goto 2548,65.6,21.2
@@ -898,6 +906,7 @@ step
     .goto 2548,65.6,21.4
     >>Defeat Snufflesnout in the ring.
     .complete 94965,1
+    .mob Snufflesnout
 step
     .isQuestComplete 94965
     .goto 2548,65.6,21.2
@@ -913,6 +922,7 @@ step
     .goto 2548,65.6,21.4
     >>Defeat Chub'chob in the ring.
     .complete 95063,1
+    .mob Chub'chob
 step
     .isQuestComplete 95063
     .goto 2548,64.4,14.8
@@ -929,13 +939,17 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 03 Powderfuse Port
 #displayname 3. Powderfuse Port and the Coast (40-45)
-#version 5
+#version 6
 #next RG - 04 Twilight's Shroud
 
 step
     +Work the neutral goblin port on the east coast: Friz's smuggling, the Eastsea pirates, murlocs and the sea monster.
     >>Wharfmaster Whizzbuzz gives his pirate quests two at a time, so the pirate coast north of the port is visited three times.
     >>Quests that continue to Booty Bay or Tanaris are left out; this guide stays in Riverglades.
+step
+    .xp <38,1
+    .goto 2548,72.3,61.8
+    .accept 95260 >>First ride just past the port to the Painted Hide, south-west of it, to start Terrors From the Deep. Argo in the port then gives It Takes Guts, so the beasts on this coast count toward its Beast Entrails.
 step
     .isOnQuest 93976
     .goto 2548,77.0,52.8
@@ -962,6 +976,17 @@ step
     .goto 2548,79.4,52.8
     .target Wharfmaster Whizzbuzz
     .accept 95119 >>Accept Unfriendly Competition.
+step
+    .isOnQuest 95260
+    .goto 2548,79.8,52.4
+    .target Argo Brinewhistle
+    .turnin 95260 >>Show the Painted Hide to Argo Brinewhistle.
+step
+    .xp <38,1
+    .isQuestTurnedIn 95260
+    .goto 2548,79.8,52.4
+    .target Argo Brinewhistle
+    .accept 95261 >>Accept It Takes Guts. Every beast drops Beast Entrails, so loot Trapclaw and the crawlers you kill on the coast.
 step
     .xp <36,1
     .goto 2548,79.0,54.2
@@ -993,15 +1018,18 @@ step
     .accept 95260 >>South-west of the port, take the Painted Hide to start Terrors From the Deep.
 step
     #loop
-    .goto 2548,73.3,70.2,0
-    .goto 2548,62.7,74.7,40,0
-    .goto 2548,73.9,58.9,40,0
-    .goto 2548,79.9,69.2,40,0
-    .goto 2548,79.2,72.8,40,0
-    .goto 2548,78.7,74.3,40,0
-    .goto 2548,78.1,75.2,40,0
-    .goto 2548,66.7,79.3,40,0
+    .goto 2548,72.7,69.7,0
+    .goto 2548,72.6,61.8,25,0
+    .goto 2548,75.7,63.2,25,0
+    .goto 2548,75.7,70.3,25,0
+    .goto 2548,74.6,75.6,25,0
+    .goto 2548,71.3,75.0,25,0
+    .goto 2548,68.1,74.5,25,0
+    .goto 2548,65.7,73.3,25,0
+    .goto 2548,70.7,70.7,25,0
+    .goto 2548,71.7,65.8,25,0
     >>On the shore and islands south of the port, kill 8 Murloc Warriors and 8 Murloc Oracles, loot 12 Saltwater Murloc Eyes from them, and kill Sand Crawlers and Shore Crawlers for 6 Sand Crawler Meat.
+    >>The crawlers also drop Beast Entrails for It Takes Guts.
     .complete -95118,1
     .complete -95118,2
     .complete -95121,1
@@ -1058,15 +1086,11 @@ step
     .accept 95261 >>Accept It Takes Guts.
 step
     #loop
-    .goto 2548,85.3,39.7,0
-    .goto 2548,80.2,43.6,40,0
-    .goto 2548,80.2,42.2,40,0
-    .goto 2548,85.1,29.9,40,0
-    .goto 2548,89.7,33.5,40,0
-    .goto 2548,90.2,35.5,40,0
-    .goto 2548,90.7,41.1,40,0
-    .goto 2548,83.7,46.9,40,0
-    .goto 2548,80.9,46.7,40,0
+    .goto 2548,86.2,38.4,0
+    .goto 2548,83.7,43.0,25,0
+    .goto 2548,85.6,33.9,25,0
+    .goto 2548,88.4,32.4,25,0
+    .goto 2548,88.0,39.8,25,0
     >>On the beach north of the port, kill 10 Eastsea Buccaneers and 10 Eastsea Musketeers, and loot 8 Smuggled Goods from them.
     .complete -95119,1
     .complete -95119,2
@@ -1098,14 +1122,16 @@ step
     .accept 95293 >>Accept Smuggler's Special. Captain Bentcoin's ship is visited on the last pirate trip.
 step
     #loop
-    .goto 2548,78.2,34.2,0
-    .goto 2548,74.9,29.9,40,0
-    .goto 2548,76.4,29.0,40,0
-    .goto 2548,79.5,30.6,40,0
-    .goto 2548,80.3,38.1,40,0
-    .goto 2548,79.9,38.4,40,0
-    .goto 2548,79.5,38.2,40,0
-    .goto 2548,75.1,33.8,40,0
+    .goto 2548,78.9,34.2,0
+    .goto 2548,79.0,39.5,25,0
+    .goto 2548,79.5,37.1,25,0
+    .goto 2548,79.7,32.9,25,0
+    .goto 2548,86.2,31.7,25,0
+    .goto 2548,82.7,30.5,25,0
+    .goto 2548,79.2,29.3,25,0
+    .goto 2548,77.2,30.7,25,0
+    .goto 2548,77.0,33.3,25,0
+    .goto 2548,77.9,36.8,25,0
     >>In the ruins of Windstead north of the port, kill 8 Eastsea Raiders and 8 Eastsea Bombardiers, and loot 5 Eastsea Powder Kegs from inside the buildings.
     .complete -95122,1
     .complete -95122,2
@@ -1128,13 +1154,17 @@ step
     #loop
     #label ArgoReady
     .isOnQuest 95261
-    .goto 2548,78.1,50.9,0
-    .goto 2548,69.5,50.1,40,0
-    .goto 2548,83.2,43.8,40,0
-    .goto 2548,85.2,45.2,40,0
-    .goto 2548,80.3,58.5,40,0
-    .goto 2548,78.0,58.1,40,0
-    >>On the way back, loot 15 Beast Entrails from Shore Crawlers and Mature Paletusks.
+    .goto 2548,79.2,50.3,0
+    .goto 2548,83.0,44.6,25,0
+    .goto 2548,79.4,50.2,25,0
+    .goto 2548,75.2,50.6,25,0
+    .goto 2548,71.7,49.9,25,0
+    .goto 2548,74.6,54.8,25,0
+    .goto 2548,77.4,59.7,25,0
+    .goto 2548,78.1,56.9,25,0
+    .goto 2548,81.8,49.2,25,0
+    .goto 2548,84.7,46.6,25,0
+    >>Finish the 15 Beast Entrails. Every beast drops them; Shore Crawlers and Mature Paletusks are the nearest to the port.
     .complete 95261,1
     .mob Shore Crawler
     .mob Mature Paletusk
@@ -1255,7 +1285,7 @@ RXPGuides.RegisterGuide([=[
 #subgroup Riverglades 36-46
 #name RG - 04 Twilight's Shroud
 #displayname 4. Twilight's Shroud (42-46)
-#version 4
+#version 5
 #next RG - 05 Krol'dok Stronghold
 
 step
@@ -1320,13 +1350,11 @@ step
     .accept 95433 >>Accept Death to the Executioner. Executioner Morg is a level 46 elite.
 step
     #loop
-    .goto 2548,29.8,43.7,0
-    .goto 2548,25.2,45.3,40,0
-    .goto 2548,26.7,37.5,40,0
-    .goto 2548,28.6,35.2,40,0
-    .goto 2548,37.2,44.8,40,0
-    .goto 2548,28.4,51.2,40,0
-    .goto 2548,27.2,49.9,40,0
+    .goto 2548,29.2,43.3,0
+    .goto 2548,29.5,38.7,25,0
+    .goto 2548,27.0,43.0,25,0
+    .goto 2548,28.8,47.8,25,0
+    .goto 2548,31.6,44.1,25,0
     >>Inside the Twilight's Shroud, kill 8 Twilight Fanatics, 8 Twilight Corrupters and 8 Twilight Champions. Champions drop Twilight Keys: use them on the cages to free 5 Rog'mar Scouts.
     .complete -94745,1
     .complete -94745,2
